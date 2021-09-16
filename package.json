@@ -1,0 +1,26 @@
+{
+  "name": "project3_letseatadeal",
+  "version": "1.0.0",
+  "description": "Full stack web application made using a MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoomzooom6/project-three-fullstack.git"
+  },
+  "author": "Jaspreet, Scott, Rabeea, Don, Tony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoomzooom6/project-three-fullstack/issues"
+  },
+  "homepage": "https://github.com/zoomzooom6/project-three-fullstack#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
