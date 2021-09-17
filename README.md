@@ -30,7 +30,7 @@ Final project for University of Toronto Full Stack Web Development Bootcamp. Ful
     * Tony Huang
 
 ## Live Webpage
-The application can be viewed online through <a href='' title="Heroku Page">Heroku</a>.
+The application can be viewed online through <a href='https://lets-eat-a-deal.herokuapp.com/' title="Heroku Page">Heroku</a>.
 
 ## How to use
 * Use as a customer:
