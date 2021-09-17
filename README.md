@@ -61,7 +61,7 @@ Back-End Team:
 This project is currently not open for contribution.
 
 ### Questions
-Please [email](group2project3uoftcoding@gmail.com) me if you have any questions.
+Please [email](group2project3uoftcoding@gmail.com) us if you have any questions.
 You may also contact us through this [GitHub](https://github.com/zoomzooom6) profile. 
 
 ### Badges
