@@ -56,7 +56,7 @@ const Signup = () => {
                 <i class="fas fa-check"></i>
                 </span>
             </div>
-            <p class="help is-success">This username is available</p>
+            
             </div>
               
             <div class="field">
@@ -76,10 +76,11 @@ const Signup = () => {
                 <i class="fas fa-exclamation-triangle"></i>
                 </span>
             </div>
-            <p class="help is-danger">This email is invalid</p>
+           
             </div>  
             
             <div class="field">
+            <label class="label">Password</label>
             <p class="control has-icons-left">
                 <input class="input" 
                 type="password" 
