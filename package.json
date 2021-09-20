@@ -4,7 +4,7 @@
   "description": "Full stack web application made using a MERN stack",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "react-scripts start",
     "build": "cd client && npm run build",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
@@ -22,5 +22,16 @@
   "homepage": "https://github.com/zoomzooom6/project-three-fullstack#readme",
   "devDependencies": {
     "concurrently": "^6.2.1"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.3.0",
+    "bulma": "^0.9.3",
+    "express": "^4.17.1",
+    "graphql": "^15.5.3",
+    "middleware": "^1.0.0",
+    "mongoose": "^6.0.6",
+    "react": "^17.0.2",
+    "react-bulma-components": "^4.0.7",
+    "react-scripts": "^4.0.3"
   }
 }
