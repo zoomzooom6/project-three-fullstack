@@ -1,7 +1,7 @@
 # Let's Eat a Deal!
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Description**: This is a full stack web application built using a MERN stack that connects small grocery stores to customers in order to help sell soon-to-be expired groceries at discounted prices. Small grocery stores may not be able to sell groceries on time which leads to financial loss and food wastage. Consequently, we developed a website that will bring these soon-to-be expired foods to the attention of customers which can enhance the foods’ sales at discounted prices, hence saving customers money on grocery shopping and preventing food wastage.
+**Description**: This is a full-stack web application built using a MERN stack that connects small grocery store vendors to customers in order to help vendors sell soon-to-be expired groceries at discounted prices to customers. Small grocery stores may not be able to sell groceries on time which leads to financial loss and food wastage. Consequently, we developed an application that will bring these soon-to-be expired foods to the attention of customers which can enhance the foods’ sales at discounted prices, hence saving customers money on grocery shopping and preventing food wastage.
 
 **Deployment Link**: 
 
