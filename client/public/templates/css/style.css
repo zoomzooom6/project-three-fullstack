@@ -1,0 +1,31 @@
+body {
+    background-color:honeydew;
+}
+
+.navbar-logo {
+    height: auto;
+    width: auto;
+    max-height: 28px;
+    max-width: 112px;
+}
+
+h1 {
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.card {
+    margin: 1%;
+}
+
+#tab-content p {
+    display: none;
+  }
+  
+#tab-content p.is-active {
+display: block;
+}
+
+form {
+    margin: 5%;
+}

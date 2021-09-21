@@ -4,9 +4,532 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Customer Dashboard</title>
+
+    <!-- Font-Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    
+    <!-- Bulma CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <!-- Customer CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="./images/IMG_0992.PNG" width="112" height="28" class="navbar-logo">
+            </a>
+      
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+      
+        <!-- Main navbar options -->
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                Home
+                </a>
+        
+                <a class="navbar-item" href="#products">
+                Local Products
+                </a>
+
+                <a class="navbar-item" href="#services">
+                Local Services
+                </a>
+
+                <a class="navbar-item" href="#help-desk">
+                Help Desk
+                </a>
+
+                <!-- Navbar dropdown menu -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Orders
+                    </a>
+            
+                    <!-- Navbar dropdown menu options -->
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item button" href="#" disabled>
+                        Orders Recieved
+                        </a>
+                        <a class="navbar-item button" href="#" disabled>
+                        Orders Shipped
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item button" href="#" disabled>
+                        Submit a Vendor Review
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Navbar dropdown menu -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Account
+                    </a>
+                    
+                    <!-- Navbar dropdown menu options -->
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item button" href="#" disabled>
+                        Update Your Information
+                        </a>                        
+                        <a class="navbar-item button" href="#" disabled>
+                        Settings & Privacy
+                        </a>
+                        <a class="navbar-item button" href="#" disabled>
+                        Help & Support
+                        </a>
+                        <a class="navbar-item button" href="#" disabled>
+                        Display & Accessibility
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item button" href="#" disabled>
+                        Provide Feedback
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Navbar signup and login options -->
+            <div class="navbar-end">
+                <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-info" href="#">
+                    <strong>Signup</strong>
+                    </a>
+                    <a class="button is-light" href="#">
+                    Login
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--  -->
+
+    <!-- Tabs -->
+    <div class="tabs is-toggle is-fullwidth" id="tabs">
+        <ul>
+            <li class="is-active" data-tab="1">
+                <a>
+                <span class="icon is-small"><i class="fas fa-info"></i></span>
+                <span>Customer Information</span>
+                </a>
+            </li>
+            <li data-tab="2">
+                <a>
+                <span class="icon is-small"><i class="fas fa-file-invoice-dollar"></i></span>
+                <span>Recent Purchases</span>
+                </a>
+            </li>
+            <li data-tab="3">
+                <a>
+                <span class="icon is-small"><i class="fas fa-users"></i></span>
+                <span>Favorite Vendors</span>
+                </a>
+            </li>
+            <li data-tab="4">
+                <a>
+                <span class="icon is-small"><i class="fas fa-comment-alt"></i></span>
+                <span>Top Vendors</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Tabs' content -->
+    <div id="tab-content" class="box">
+        <p class="is-active" data-content="1">
+            <b>Name</b>: Lindsey Smith
+            <br>
+            <b>Email</b>: <a href="mailto:lindsey@gmail.com">lindsey@gmail.com</a>
+            <br>
+            <b>Address</b>: 1425 Uptown Street
+            <br>
+            <b>Phone Number</b>: 456-456-8787
+        </p>
+        <p data-content="2">
+            <b>Recent Purchase Amount</b>: 10 Items
+            <br>
+            <b>Recent Purchase Cost</b>: $50
+            <br>
+            <b>Recent Purchase Items</b>: KitKat Chocolate Bar (x10)
+            <br>
+            <b>Checkouts Per Month</b>: 4
+        </p>
+        <p data-content="3">
+            <b>Organic Veg Inc.</b>: 10 Items Purchased This Week
+            <br>
+            <b>EatFreak Inc.</b>: 2 Items Purchased Last Week
+            <br>
+            <b>I Love Eating Inc.</b>: 7 Items Purchased This Last
+            <br>
+        </p>
+        <p data-content="4">
+            <b>Organic Veg Inc.</b>
+            <br>
+            <b>EatFreak Inc.</b>
+            <br>
+            <b>I Love Eating Inc.</b>
+            <br>
+        </p>
+    </div>
     
+
+    <!-- Products section -->
+
+    <h1 class="title is-1" id="products">Products</h1>
+
+    <br>
+
+    <!-- Product cards -->
+    <div class="container">
+        <!-- Product row -->
+        <div class="columns">
+            <!-- Product card -->
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <!-- <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div> -->
+        
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <br><br>
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Product card -->
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <!-- <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div> -->
+        
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <br><br>
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Product card -->
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <!-- <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div> -->
+        
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <br><br>
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product card -->
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <!-- <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div> -->
+        
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <br><br>
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product row -->
+        <div class="columns">
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <!-- <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div> -->
+        
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <br><br>
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <!-- <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div> -->
+        
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <br><br>
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="title is-1" id="services">Services</h1>
+
+    <!-- Service cards -->
+    <div class="container">
+        <!-- Service row -->
+        <div class="columns">
+            <!-- Service card -->
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <!-- <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div> -->
+        
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <br><br>
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1 class="title is-1" id="help-desk">Customer Help Desk</h1>
+
+    <form>
+        <div class="field">Your Email</label>
+            <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Please enter your email">
+            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+            </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+        </div>
+        
+        <div class="field">
+            <label class="label">Vendor's Email</label>
+            <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Please the vendor's email">
+            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+            </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+        </div>
+        
+        <div class="field">
+            <label class="label">Email Title</label>
+            <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Concern Message</label>
+            <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+        </div>
+                
+        <div class="field is-grouped">
+            <div class="control">
+            <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="./js/script.js"></script>
 </body>
 </html>
