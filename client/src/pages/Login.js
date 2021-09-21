@@ -41,31 +41,51 @@ const Login = props => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-md-6">
+    <main className="is-mobile is-centered">
+      <div className="column is-half">
         <div className="card">
-          <h4 className="card-header">Login</h4>
-          <div className="card-body">
-            <form onSubmit={handleFormSubmit}>
-              <input
-                className="form-input"
-                placeholder="Your email"
-                name="email"
-                type="email"
-                id="email"
+          <header className="card-header">
+            <p class="card-header-title is-centered">
+            Login
+            </p>
+          </header>
+          <div className="card-content">
+            <form onSubmit={handleFormSubmit}>  
+            <div className="field">
+            <label className="label">Email</label>
+            <div className="control has-icons-left has-icons-right">
+                <input className="input is-success" 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="Your email"  
                 value={formState.email}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="******"
-                name="password"
-                type="password"
-                id="password"
+                onChange={handleChange}/>
+                <span className="icon is-small is-left">
+                <i className="fas fa-envelope"></i>
+                </span>
+                <span className="icon is-small is-right">
+                <i className="fas fa-exclamation-triangle"></i>
+                </span>
+            </div>
+           
+            </div>  
+            
+            <div className="field">
+            <label className="label">Password</label>
+            <p class="control has-icons-left">
+                <input className="input is-success"  
+                type="password" 
+                id="password" 
+                placeholder="Password"
                 value={formState.password}
-                onChange={handleChange}
-              />
-              <button className="btn d-block w-100" type="submit">
+                onChange={handleChange}/>
+                <span className="icon is-small is-left">
+                <i className="fas fa-lock"></i>
+                </span>
+            </p>
+            </div>
+              <button className="button is-success" type="submit">
                 Submit
               </button>
             </form>

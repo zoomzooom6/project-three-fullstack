@@ -37,7 +37,11 @@ const Signup = () => {
     <main className="is-mobile is-centered">
       <div className="column is-half">
         <div className="card">
-          <h2 className="card-header">Sign Up</h2>
+        <header className="card-header">
+            <p class="card-header-title is-centered">
+            Sign Up
+            </p>
+          </header>
           <div className="card-content">
             <form onSubmit={handleFormSubmit}>
             <div className="field">
