@@ -40,60 +40,70 @@ const Signup = () => {
           <h2 className="card-header">Sign Up</h2>
           <div className="card-content">
             <form onSubmit={handleFormSubmit}>
-            <div class="field">
-                <label class="label">Username</label>
-                <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" 
+            <div className="field">
+                <label className="label">Username</label>
+                <div className="control has-icons-left has-icons-right">
+                <input className="input is-success" 
                 type="username" 
                 name="username" 
                 placeholder="Your Username" 
                  value={formState.username} 
                 onChange={handleChange}/>
-                <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
+                <span className="icon is-small is-left">
+                <i className="fas fa-user"></i>
                 </span>
-                <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
+                <span className="icon is-small is-right">
+                <i className="fas fa-check"></i>
                 </span>
             </div>
             
             </div>
               
-            <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" 
+            <div className="field">
+            <label className="label">Email</label>
+            <div className="control has-icons-left has-icons-right">
+                <input className="input is-success" 
                 type="email" 
                 name="email" 
                 id="email" 
                 placeholder="Email input"  
                 value={formState.email}
                 onChange={handleChange}/>
-                <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
+                <span className="icon is-small is-left">
+                <i className="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
+                <span className="icon is-small is-right">
+                <i className="fas fa-exclamation-triangle"></i>
                 </span>
             </div>
            
             </div>  
             
-            <div class="field">
-            <label class="label">Password</label>
+            <div className="field">
+            <label className="label">Password</label>
             <p class="control has-icons-left">
-                <input class="input" 
+                <input className="input is-success"  
                 type="password" 
                 id="password" 
                 placeholder="Password"
                 value={formState.password}
                 onChange={handleChange}/>
-                <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
+                <span className="icon is-small is-left">
+                <i className="fas fa-lock"></i>
                 </span>
             </p>
             </div>
-              
+            <div className="control">
+                    <label className="radio">
+                    <input type="radio" name="account"/>
+                        Vendor
+                    </label>
+                    <label className="radio">
+                    <input type="radio" name="account" checked/>
+                        Comsumer
+                </label>
+                
+            </div>  
               
               <button className="button is-success" type="submit">
                 Submit
