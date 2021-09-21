@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const ProductSchema = new Schema({
     name = {
@@ -18,10 +18,18 @@ const ProductSchema = new Schema({
         min: 0,
         default: 0
     },
-    category = [],
-    seller = {
+    postedAt: {
+        type: Date,
+        default: Date.now
+    },
+    category = {
         type: Schema.Types.ObjectId,
-        ref: 'User',
+        ref: 'Category',
+        required: true
+    },
+    store = {
+        type: Schema.Types.ObjectId,
+        ref: 'Store',
         required: true
     }
 });

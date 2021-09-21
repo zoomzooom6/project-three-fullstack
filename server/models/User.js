@@ -12,6 +12,10 @@ const UserSchema = new Schema({
     },
     account: {
         type: String
+    },
+    store: {
+        type: Schema.Types.ObjectId,
+        ref: 'storeId'
     }
 });
 
