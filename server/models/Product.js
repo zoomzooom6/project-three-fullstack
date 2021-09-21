@@ -1,19 +1,19 @@
 const { Schema, model } = require('mongoose');
 
 const ProductSchema = new Schema({
-    name = {
+    productName: {
         type: String,
         required: true,
         trim: true
     },
-    price = { 
+    price: { 
         type: Number,
         required: true,
     },
-    description = {
+    description: {
         type: String
     },
-    quantity = {
+    quantity: {
         type: Number,
         min: 0,
         default: 0
@@ -22,12 +22,12 @@ const ProductSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    category = {
+    category: {
         type: Schema.Types.ObjectId,
         ref: 'Category',
         required: true
     },
-    store = {
+    store: {
         type: Schema.Types.ObjectId,
         ref: 'Store',
         required: true

@@ -32,7 +32,7 @@ const resolvers = {
             return await Product.findById(_id);
         }
     },
-    Mutations: {
+    Mutation: {
         addUser: async (parent, args) => {
             const user = await User.create(args);
 
