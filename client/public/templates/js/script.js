@@ -1,3 +1,4 @@
+// Toggle between tabs
 const TABS = [...document.querySelectorAll('#tabs li')];
 const CONTENT = [...document.querySelectorAll('#tab-content p')];
 const ACTIVE_CLASS = 'is-active';
@@ -34,3 +35,4 @@ function updateActiveContent(selected) {
 }
 
 initTabs();
+// End of toggle between tabs
