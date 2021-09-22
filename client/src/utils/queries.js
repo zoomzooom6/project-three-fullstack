@@ -7,3 +7,14 @@ export const QUERY_CHECKOUT = gql`
     }
   }
 `;
+
+export const QUERY_PRODUCTS = gql`
+  query {
+    products {
+      id
+      name
+      description
+      price
+    }
+  }
+`;
