@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { QUERY_CHECKOUT, QUERY_PRODUCTS } from "../../utils/queries";
-import { loadStripe } from "@stripe/stripe-js";
 import { useLazyQuery, useQuery } from "@apollo/react-hooks";
 import { ADD_TO_CART } from "../../utils/actions";
-
-const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 function Cart() {
   const state = useSelector((state) => state);
@@ -13,12 +10,12 @@ function Cart() {
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
-  const [getCheckout, { checkoutData }] = useLazyQuery(QUERY_CHECKOUT);
+  // const [getCheckout, { checkoutData }] = useLazyQuery(QUERY_CHECKOUT);
   // console.log(data);
 
-  useEffect(() => {
-    console.log(checkoutData);
-  }, [checkoutData]);
+  // useEffect(() => {
+  //   console.log("working");
+  // }, [checkoutData]);
 
   const addToCart = () => {
     dispatch({
@@ -27,30 +24,30 @@ function Cart() {
     });
   };
 
-  const checkout = () => {
-    const productIds = [];
+  // const checkout = () => {
+  //   const productIds = [];
 
-    state.cart[0].products.forEach((item) => {
-      productIds.push(item.id);
-    });
-    console.log(productIds);
-    console.log(data);
+  //   state.cart[0].products.forEach((item) => {
+  //     productIds.push(item.id);
+  //   });
+  //   console.log(productIds);
+  //   console.log(data);
 
-    getCheckout({
-      variables: { products: ["614a6da4d473c64e7385683e"] },
-    });
+  //   // getCheckout({
+  //   //   variables: { products: ["614a6da4d473c64e7385683e"] },
+  //   // });
 
-    console.log(checkoutData);
-    // stripePromise.then((res) => {
-    //   res.redirectToCheckout({ sessionId: checkoutData.checkout.session });
-    // });
-  };
+  //   console.log(checkoutData);
+  //   // stripePromise.then((res) => {
+  //   //   res.redirectToCheckout({ sessionId: checkoutData.checkout.session });
+  //   // });
+  // };
 
   return (
     <div>
       <h1>Testing</h1>
       <button onClick={addToCart}>Add to cart</button>
-      <button onClick={checkout}>Checkout</button>
+      {/* <button onClick={checkout}>Checkout</button> */}
     </div>
   );
 }

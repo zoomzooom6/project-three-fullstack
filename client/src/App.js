@@ -5,6 +5,7 @@ import { reducer } from "./utils/reducers";
 import { Provider } from "react-redux";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
+import Checkout from "./components/Checkout";
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -37,6 +38,7 @@ function App() {
         <Provider store={store}>
           <header className="App-header">
             <Cart />
+            <Checkout />
           </header>
         </Provider>
       </div>
