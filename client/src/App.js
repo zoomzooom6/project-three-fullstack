@@ -3,6 +3,20 @@ import Cart from "./components/Cart";
 import { createStore } from "redux";
 import { reducer } from "./utils/reducers";
 import { Provider } from "react-redux";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "@apollo/react-hooks";
+
+const client = new ApolloClient({
+  request: (operation) => {
+    const token = localStorage.getItem("id_token");
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : "",
+      },
+    });
+  },
+  uri: "/graphql",
+});
 
 const globalState = {
   cart: [],
@@ -18,13 +32,15 @@ const store = createStore(
 
 function App() {
   return (
-    <div className="App">
-      <Provider store={store}>
-        <header className="App-header">
-          <Cart />
-        </header>
-      </Provider>
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <Provider store={store}>
+          <header className="App-header">
+            <Cart />
+          </header>
+        </Provider>
+      </div>
+    </ApolloProvider>
   );
 }
 
