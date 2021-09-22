@@ -29,24 +29,21 @@ const Header = () => {
      <div class="navbar-end">
          <div class="navbar-item">
             <div class="buttons">
-                <a class="button is-info" href="#">
-                  <strong>Signup</strong>
+                <a class="button is-info" href="/signup">
+                <Link to="/signup">Signup</Link>
                 </a>
-                <a class="button is-light" href="#">
-                  Login
+                <a class="button is-light" href="/login">
+                <Link to="/login">Login</Link>
                 </a>
                 <a class="button is-warning" href="#">
                     Checkout
                 </a>
-                      
+                
               </div>
           </div>
       </div>
       
     </nav>
-
-
-
   );
 };
 

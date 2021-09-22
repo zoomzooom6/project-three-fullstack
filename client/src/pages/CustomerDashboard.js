@@ -1,6 +1,7 @@
 import React from 'react';
 import store from '../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg';
 
+
 const CustomerDashboard = () => {
     
 
