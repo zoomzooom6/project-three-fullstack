@@ -8,7 +8,7 @@ const sessionId = async function () {
 
   const price = await stripe.prices.create({
     product: product.id,
-    unit_amount: 5000,
+    unit_amount: 100,
     currency: "CAD",
   });
 

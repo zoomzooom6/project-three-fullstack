@@ -6,10 +6,11 @@ const typeDefs = gql`
     id: ID!
     price: String!
     seller: String!
+    description: String!
   }
 
   type Checkout {
-    sessions: ID!
+    session: ID!
   }
 
   type Query {
