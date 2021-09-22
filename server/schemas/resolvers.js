@@ -17,26 +17,46 @@ const resolvers = {
         categories: async () => {
             return await Category.find();
         },
-        user: async (parent, args, context) => {
-            if (context.user) {
-                const user = await User.findById(context.user._id);
-                return user;
-            }
+        users: async () => {
+            return await User.find();
         },
-        products: async (parent, context) => {
+        user: async (parent, { _id}) => {
+            const user = await User.findById(_id);
+            if (!user) {
+                return 'No user found with that id.'
+            }
+            return user;
+        },
+        products: async (parent, { category, name }) => {
             const params = {};
 
-            return await Product.find(params);
+            if (category) {
+                params.category = category;
+            }
+
+            if (name) {
+                params.name = {
+                    $regex: name
+                }
+            }
+
+            return await Product.find(params).populate('category');
         },
         product: async (parent, { _id}) => {
             return await Product.findById(_id);
+        },
+        store: async (parent, { _id}) => {
+            return await Store.findById(_id);
+        },
+        stores: async () => {
+            return await Store.find();
         }
     },
     Mutation: {
         addUser: async (parent, args) => {
             const user = await User.create(args);
 
-            return { user };
+            return user;
         },
         updateUser: async (parent, args, context) => {
             if (context.user) {
@@ -69,7 +89,7 @@ const resolvers = {
             const product = await Product.create(args);
 
             //needs authentication to add/create new product
-            return { product };
+            return product;
         },
         updateProduct: async (parent, args, context) => {
             if (context.product) {

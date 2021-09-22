@@ -1,17 +1,13 @@
-const { Schema, model, Types } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const StoreSchema = new Schema(
     {
-        storeId: {
-            type: Schema.Types.ObjectId,
-            default: () => new Types.ObjectId()
-        },
         storeName: {
             type: String,
             required: true
         },
         storeOwner: {
-            type: Schema.Types.ObjectId,
+            type: Schema.Types.String,
             ref: 'User',
             required: true
         },

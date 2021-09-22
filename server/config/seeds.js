@@ -14,6 +14,68 @@ db.once('open', async () => {
 
     console.log('categories seeded');
 
+    await User.deleteMany();
+
+    const users = await User.insertMany([
+        {
+            username: '',
+            email: '',
+            password: '',
+            account: 'seller'
+        },
+        {
+            username: '',
+            email: '',
+            password: '',
+            account: 'seller'
+        },
+        {
+            username: '',
+            email: '',
+            password: '',
+            account: 'seller'
+        },
+        {
+            username: '',
+            email: '',
+            password: '',
+            account: 'buyer'
+        },
+        {
+            username: '',
+            email: '',
+            password: '',
+            account: 'buyer'
+        },
+        {
+            username: '',
+            email: '',
+            password: '',
+            account: 'buyer'
+        }
+    ]);
+
+    console.log('users seeded');
+
+    await Store.deleteMany();
+
+    const stores = await Store.insertMany([
+        {
+            storeName: '',
+            storeOwner: ''
+        },
+        {
+            storeName: '',
+            storeOwner: ''
+        },
+        {
+            storeName: '',
+            storeOwner: ''
+        }
+    ]);
+
+    console.log('stores seeded');
+
     await Product.deleteMany();
 
     const products = await Product.insertMany([
@@ -30,29 +92,6 @@ db.once('open', async () => {
     ]);
 
     console.log('products seeded');
-
-    await User.deleteMany();
-
-    const users = await User.insertMany([
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-    ]);
-
-    console.log('users seeded');
-
-    await Store.deleteMany();
-
-    const stores = await Store.insertMany([
-        {},
-        {},
-        {},
-        {},
-        {}
-    ])
 
     process.exit();
 })
