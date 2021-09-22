@@ -34,11 +34,11 @@ const resolvers = {
                 params.category = category;
             }
 
-            if (name) {
-                params.name = {
-                    $regex: name
-                }
-            }
+            // if (name) {
+            //     params.name = {
+            //         $regex: name
+            //     }
+            // }
 
             return await Product.find(params).populate('category');
         },

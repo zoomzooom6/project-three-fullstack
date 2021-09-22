@@ -30,6 +30,10 @@ const typeDefs = gql`
         storeOwner: String
         products: [Product]
     }
+    
+    type Checkout {
+        session: ID
+    }
 
     type Query {
         helloWorld: String
@@ -37,9 +41,9 @@ const typeDefs = gql`
         categories: [Category]
         users: [User]
         user(_id: ID!): User
-        products(category: ID, name: String): [Product]
+        products(category: ID, productName: String): [Product]
         product(_id: ID!): Product
-        checkout(products: [ID]!): Checkout
+        checkout(products: [ID!]): Checkout
         stores: [Store]
         store:(_id: ID!): Store
     }
@@ -51,10 +55,6 @@ const typeDefs = gql`
         addProduct(productName: String!, price: Int!, description: String, quantity: Int, category: ID!): Product
         updateProduct(name: String, price: Int, description: String, quantity: Int, category: ID!): Product
         createStore(storeName: String!, storeOwner: String!): Store
-    }
-
-    type Checkout {
-        session: ID
     }
 `;
 
