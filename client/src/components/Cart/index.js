@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { QUERY_PRODUCTS } from "../../utils/queries";
+import { QUERY_CHECKOUT, QUERY_PRODUCTS } from "../../utils/queries";
 import { loadStripe } from "@stripe/stripe-js";
 import { useLazyQuery, useQuery } from "@apollo/react-hooks";
 import { ADD_TO_CART } from "../../utils/actions";
@@ -12,22 +12,45 @@ function Cart() {
   const dispatch = useDispatch();
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
-  console.log(data);
-  const { cart } = state;
 
-  // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  const [getCheckout, { checkoutData }] = useLazyQuery(QUERY_CHECKOUT);
+  // console.log(data);
+
+  useEffect(() => {
+    console.log(checkoutData);
+  }, [checkoutData]);
 
   const addToCart = () => {
     dispatch({
       type: ADD_TO_CART,
-      product: data.products[0].name,
+      product: data,
     });
+  };
+
+  const checkout = () => {
+    const productIds = [];
+
+    state.cart[0].products.forEach((item) => {
+      productIds.push(item.id);
+    });
+    console.log(productIds);
+    console.log(data);
+
+    getCheckout({
+      variables: { products: ["614a6da4d473c64e7385683e"] },
+    });
+
+    console.log(checkoutData);
+    // stripePromise.then((res) => {
+    //   res.redirectToCheckout({ sessionId: checkoutData.checkout.session });
+    // });
   };
 
   return (
     <div>
       <h1>Testing</h1>
       <button onClick={addToCart}>Add to cart</button>
+      <button onClick={checkout}>Checkout</button>
     </div>
   );
 }

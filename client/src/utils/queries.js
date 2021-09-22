@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 
 export const QUERY_CHECKOUT = gql`
-  query getCheckout($products: [ID]!) {
+  query checkout($products: [ID]!) {
     checkout(products: $products) {
       session
     }
