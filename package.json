@@ -22,5 +22,8 @@
   "homepage": "https://github.com/zoomzooom6/project-three-fullstack#readme",
   "devDependencies": {
     "concurrently": "^6.2.1"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.4"
   }
 }

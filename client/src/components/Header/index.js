@@ -41,73 +41,21 @@ const Header = () => {
           <a class="navbar-item" href="/">
             Home
           </a>
-
-          <a class="navbar-item" href="/customerdashboard">
-            Local Products
-          </a>
-
-          <a class="navbar-item" href="#services">
-            Local Services
-          </a>
-
-          <a class="navbar-item" href="#help-desk">
-            Help Desk
-          </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Orders</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item button" href="#" disabled>
-                Orders Received
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Orders Shipped
-              </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item button" href="#" disabled>
-                Submit a Vendor Review
-              </a>
-            </div>
-          </div>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Account</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item button" href="#" disabled>
-                Update Your Information
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Settings & Privacy
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Help & Support
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Display & Accessibility
-              </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item button" href="#" disabled>
-                Provide Feedback
-              </a>
-            </div>
-          </div>
         </div>
+      </div>
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-info" href="/signup">
-                <strong>Signup</strong>
-              </a>
-              <a class="button is-light" href="/login">
-                Login
-              </a>
-              <a class="button is-warning" href="#">
-                Checkout
-              </a>
-            </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-info" href="/signup">
+              <Link to="/signup">Signup</Link>
+            </a>
+            <a class="button is-light" href="/login">
+              <Link to="/login">Login</Link>
+            </a>
+            <a class="button is-warning" href="#">
+              Checkout
+            </a>
           </div>
         </div>
       </div>

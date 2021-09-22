@@ -4,6 +4,65 @@ import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg
 const CustomerDashboard = () => {
   return (
     <main>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Home
+          </a>
+
+          <a class="navbar-item" href="#products">
+            Local Products
+          </a>
+
+          <a class="navbar-item" href="#services">
+            Local Services
+          </a>
+
+          <a class="navbar-item" href="#help-desk">
+            Help Desk
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Orders</a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item button" href="#" disabled>
+                Orders Recieved
+              </a>
+              <a class="navbar-item button" href="#" disabled>
+                Orders Shipped
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item button" href="#" disabled>
+                Submit a Vendor Review
+              </a>
+            </div>
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Account</a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item button" href="#" disabled>
+                Update Your Information
+              </a>
+              <a class="navbar-item button" href="#" disabled>
+                Settings & Privacy
+              </a>
+              <a class="navbar-item button" href="#" disabled>
+                Help & Support
+              </a>
+              <a class="navbar-item button" href="#" disabled>
+                Display & Accessibility
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item button" href="#" disabled>
+                Provide Feedback
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="tabs is-toggle is-fullwidth" id="tabs">
         <ul>
           <li className="is-active" data-tab="1">
