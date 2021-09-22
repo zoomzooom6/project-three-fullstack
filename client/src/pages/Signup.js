@@ -104,7 +104,7 @@ const Signup = () => {
                     </label>
                     <label className="radio">
                     <input type="radio" name="account" checked/>
-                        Comsumer
+                        Customer
                 </label>
                 
             </div>  
