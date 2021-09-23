@@ -1,10 +1,10 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Store, Category } = require('../models');
 //import for JWT authentication
-//const { signToken } = require('../utils/auth');
+const { signToken } = require('../utils/auth');
 
 //import for free stripe "integration"/testing purposes
-// const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const resolvers = {
     Query: {
@@ -20,7 +20,7 @@ const resolvers = {
         users: async () => {
             return await User.find();
         },
-        user: async (parent, { _id}) => {
+        user: async (parent, { _id }) => {
             const user = await User.findById(_id);
             if (!user) {
                 return 'No user found with that id.'
@@ -42,28 +42,40 @@ const resolvers = {
 
             return await Product.find(params).populate('category');
         },
-        product: async (parent, { _id}) => {
+        product: async (parent, { _id }) => {
             return await Product.findById(_id);
         },
-        store: async (parent, { _id}) => {
-            return await Store.findById(_id);
+        store: async (parent, { _id }) => {
+            return await Store.findById(_id).populate('storeOwner');
         },
         stores: async () => {
-            return await Store.find();
-        }
+            return await Store.find().populate('storeOwner');
+        },
+        // order: async (parent, { _id }, context) => {
+        //     if (context.user) {
+        //         const user = await User.findById(context.user._id).populate({
+        //             path: 'orders.products',
+        //             populate: 'category'
+        //         });
+
+        //         return user.orders.id(_id);
+        //     }
+
+        //     throw new AuthenticationError('Not logged in');
+        // },
     },
     Mutation: {
         addUser: async (parent, args) => {
             const user = await User.create(args);
-
-            return user;
+            const token = signToken(user);
+            return { token, user };
         },
         updateUser: async (parent, args, context) => {
             if (context.user) {
                 return await User.findByIdAndUpdate(context.user._id, args, { new: true });
             }
 
-            //needs authentication to update
+            throw new AuthenticationError('Not logged in');
         },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
@@ -79,30 +91,47 @@ const resolvers = {
             }
 
             //creates JWT association with specific user
-            //const token = signToken(user);
-            //return { token, user };
+            const token = signToken(user);
+            return { token, user };
 
             //REMOVE THIS RETURN ONCE JWT IS IMPLEMENTED
-            return { user };
+            //return { user };
         },
-        addProduct: async (parent, args) => {
-            const product = await Product.create(args);
+        addOrder: async (parent, { products }, context) => {
+            console.log(context);
+            if (context.user) {
+                const order = new Order({ products });
 
+                await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+
+                return order;
+            }
+
+            throw new AuthenticationError('Not logged in');
+        },
+        addProduct: async (parent, args, context) => {
+            console.log(context);
             //needs authentication to add/create new product
+            if (context.user) {
+                const product = await Product.create(args);
+            }
+
             return product;
         },
         updateProduct: async (parent, args, context) => {
-            if (context.product) {
+            if (context.user) {
                 return await Product.findByIdAndUpdate(context.product._id, args, { new: true });
             }
 
-            //needs authentication to update
+            throw new AuthenticationError('Not logged in');
         },
-        createStore: async (parent, args) => {
-            const store = await Store.create(args);
-
+        createStore: async (parent, args, context) => {
             //needs authentication to create store
-            return { store };
+            if (context.user) {
+                return await Store.create(args);
+            }
+
+            throw new AuthenticationError('Not logged in');
         }
     }
 };

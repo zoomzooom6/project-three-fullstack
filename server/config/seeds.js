@@ -16,7 +16,7 @@ db.once('open', async () => {
 
     await User.deleteMany();
 
-    const users = await User.insertMany([
+    const users = await User.create([
         {
             username: 'Gaben Weston Jr',
             email: 'seller1@email.com',
