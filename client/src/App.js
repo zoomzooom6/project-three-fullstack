@@ -5,6 +5,8 @@ import ApolloClient from "apollo-boost";
 import { createStore } from "redux";
 import { reducer } from "./utils/reducers";
 import { Provider } from "react-redux";
+import { setContext } from '@apollo/client/link/context'
+import { createHttpLink } from "@apollo/client";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -16,6 +18,10 @@ import CustomerDashboard from "./pages/CustomerDashboard";
 import VendorDashboard from "./pages/VendorDashboard";
 import Success from "./pages/Success";
 
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
 const client = new ApolloClient({
   request: (operation) => {
     const token = localStorage.getItem("id_token");
@@ -25,7 +31,7 @@ const client = new ApolloClient({
       },
     });
   },
-  uri: "http://localhost:3001/graphql",
+  uri: httpLink,
 });
 
 const globalState = {
