@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { QUERY_PRODUCT, QUERY_PRODUCTS } from "../utils/queries";
+import { QUERY_PRODUCTS } from "../utils/queries";
 import { ADD_TO_CART } from "../utils/actions";
 import { useQuery } from "@apollo/react-hooks";
-import { useLazyQuery } from "@apollo/client";
+// import { useLazyQuery } from "@apollo/client";
 
 function Home() {
   const { data } = useQuery(QUERY_PRODUCTS);
@@ -16,7 +16,7 @@ function Home() {
     dispatch({
       type: ADD_TO_CART,
       product: data.products.filter((item) => {
-        return item.id === id;
+        return item._id === id;
       }),
     });
     // console.log(singleProductData);
@@ -34,11 +34,11 @@ function Home() {
       {data && (
         <div className="product-list">
           {data.products.map((item) => (
-            <div className="product-card" key={item.id}>
+            <div className="product-card" key={item._id}>
               <h1>{item.name}</h1>
-              <h1>{item.id}</h1>
+              <h1>{item.description}</h1>
               <h1>{item.price}</h1>
-              <button onClick={() => addToCart(item.id)}>Add To Cart</button>
+              <button onClick={() => addToCart(item._id)}>Add To Cart</button>
             </div>
           ))}
         </div>

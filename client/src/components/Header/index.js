@@ -1,12 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/IMG_0992.PNG";
 import Auth from "../../utils/auth";
+import { useSelector } from "react-redux";
+import { useLazyQuery } from "@apollo/client";
+import { QUERY_CHECKOUT } from "../../utils/queries";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 const Header = () => {
   const logout = (event) => {
     event.preventDefault();
     Auth.logout();
+  };
+
+  const state = useSelector((state) => state);
+
+  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  console.log(data);
+
+  useEffect(() => {
+    if (data) {
+      stripePromise.then((res) => {
+        res.redirectToCheckout({ sessionId: data.checkout.session });
+      });
+    }
+  }, [data]);
+
+  const checkout = () => {
+    const productIds = [];
+
+    state.cart.forEach((item) => {
+      item.forEach((product) => {
+        productIds.push(product._id);
+      });
+    });
+
+    // state.cart[0].products.forEach((item) => {
+    //   if (item.id !== null) {
+    //     productIds.push(item.id);
+    //   }
+    // });
+    console.log(productIds);
+
+    getCheckout({
+      variables: { products: productIds },
+    });
   };
 
   return (
@@ -53,9 +93,9 @@ const Header = () => {
             <a class="button is-light" href="/login">
               <Link to="/login">Login</Link>
             </a>
-            <a class="button is-warning" href="#">
+            <button class="button is-warning" onClick={checkout}>
               Checkout
-            </a>
+            </button>
           </div>
         </div>
       </div>

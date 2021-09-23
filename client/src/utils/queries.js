@@ -11,6 +11,7 @@ export const QUERY_CHECKOUT = gql`
 export const QUERY_PRODUCTS = gql`
   query {
     products {
+      name
       _id
       price
       description
