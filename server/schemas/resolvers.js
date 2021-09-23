@@ -33,7 +33,6 @@ const resolvers = {
     product: async (parent, { _id }) => {
       return await Product.findById(_id);
     },
-
     store: async (parent, { _id }) => {
       return await Store.findById(_id).populate("storeOwner");
     },
