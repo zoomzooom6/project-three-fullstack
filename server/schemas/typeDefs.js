@@ -16,6 +16,7 @@ const typeDefs = gql`
   type Query {
     helloWorld: String
     products: [Product]
+    product(productId: ID!): Product
     checkout(products: [ID]!): Checkout
   }
 `;

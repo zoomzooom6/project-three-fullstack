@@ -9,6 +9,9 @@ const resolvers = {
     products: async () => {
       return Product.find();
     },
+    product: async (parent, { productId }) => {
+      return Product.findOne({ productId });
+    },
   },
 };
 
