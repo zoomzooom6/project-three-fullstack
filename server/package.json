@@ -6,19 +6,20 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node seeders/seeds.js"
+    "seed": "node ./config/seeds.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^2.15.1",
+    "apollo-server-express": "^2.25.2",
     "bcrypt": "^5.0.1",
     "express": "^4.17.1",
     "faker": "^5.5.3",
     "graphql": "^15.5.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.6"
+    "mongoose": "^6.0.6",
+    "stripe": "^8.176.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
