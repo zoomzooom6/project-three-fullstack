@@ -3,7 +3,7 @@
 
 **Description**: This is a full-stack web application built using a MERN stack that connects small grocery store vendors to customers in order to help vendors sell soon-to-be expired groceries at discounted prices to customers. Small grocery stores may not be able to sell groceries on time which leads to financial loss and food wastage. Consequently, we developed an application that will bring these soon-to-be expired foods to the attention of customers which can enhance the foods’ sales at discounted prices, hence saving customers money on grocery shopping and preventing food wastage.
 
-**Deployment Link**: 
+**Deployment Link**: https://lets-eat-a-deal.herokuapp.com/
 
 **Video Tutorial Links**: N/A
 
