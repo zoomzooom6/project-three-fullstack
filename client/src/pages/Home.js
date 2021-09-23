@@ -1,25 +1,33 @@
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { QUERY_PRODUCTS } from "../utils/queries";
-import { useQuery } from "@apollo/react-hooks";
 import { ADD_TO_CART } from "../utils/actions";
+import { useQuery } from "@apollo/react-hooks";
+// import { useLazyQuery } from "@apollo/client";
 
 function Home() {
-  const dispatch = useDispatch();
-
   const { data } = useQuery(QUERY_PRODUCTS);
 
-  const addToCart = () => {
-    dispatch({
-      type: ADD_TO_CART,
-      product: data,
-    });
-  };
+  useEffect(() => {
+    if (data) {
+      console.log("ITS WORKING NOW ");
+    }
+  }, [data]);
 
   return (
     <div>
-      <h1>Testing</h1>
-      <button onClick={addToCart}>Add to cart</button>
+      <h1>Products</h1>
+      {data && (
+        <div className="product-list">
+          {data.products.map((item) => (
+            <div className="product-card">
+              <h1>{item.name}</h1>
+              <h1>{item.description}</h1>
+              <h1>{item.price}</h1>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
