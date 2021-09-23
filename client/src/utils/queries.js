@@ -16,6 +16,7 @@ export const QUERY_PRODUCTS = gql`
       price
       description
       image
+      quantity
     }
   }
 `;

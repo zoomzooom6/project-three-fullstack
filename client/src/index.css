@@ -63,7 +63,7 @@ img {
 .product-card {
   border: black 2px solid;
   margin: 20px;
-  padding: 60px;
+  padding: 30px;
 }
 
 .center-children-vertical {
@@ -80,9 +80,9 @@ img {
   margin-top: 15%;
 }
 
-.margin-top-0 {
-  margin-top: -25%;
-}
+/* .margin-top-0 {
+  margin-top: -20%;
+} */
 
 .larger-font {
   font-size: 50px;
@@ -90,4 +90,15 @@ img {
 
 .large-font {
   font-size: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .product-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .margin-top-0 {
+    margin-top: -5%;
+  }
 }
