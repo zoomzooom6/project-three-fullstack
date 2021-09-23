@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cart from "./components/Cart";
+import { createStore } from "redux";
+import { reducer } from "./utils/reducers";
+import { Provider } from "react-redux";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "@apollo/react-hooks";
+import Checkout from "./components/Checkout";
+
+const client = new ApolloClient({
+  request: (operation) => {
+    const token = localStorage.getItem("id_token");
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : "",
+      },
+    });
+  },
+  uri: "http://localhost:3001/graphql",
+});
+
+const globalState = {
+  cart: [],
+  products: [],
+  categories: [],
+};
+
+const store = createStore(
+  reducer,
+  globalState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <Provider store={store}>
+          <header className="App-header">
+            <Cart />
+            <Checkout />
+          </header>
+        </Provider>
+      </div>
+    </ApolloProvider>
   );
 }
 
