@@ -143,12 +143,12 @@ db.once('open', async () => {
             products: [products[0]._id, products[1]._id, products[2]._id]
         },
         {
-            storeName: 'Lengos',
+            storeName: 'Lungos',
             storeOwner: users[1]._id,
             products: [products[3]._id, products[4]._id, products[5]._id]
         },
         {
-            storeName: 'Furm Boy',
+            storeName: 'Ferm Boy',
             storeOwner: users[2]._id,
             products: [products[6]._id, products[7]._id, products[8]._id, products[9]._id]
         }
