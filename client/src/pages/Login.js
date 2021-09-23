@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
-import { useMutation } from '@apollo/react-hooks';
-import { LOGIN_USER } from '../utils/mutations';
+import React, { useState } from "react";
+import { useMutation } from "@apollo/react-hooks";
+import { LOGIN_USER } from "../utils/mutations";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 
-const Login = props => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
+const Login = (props) => {
+  const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
-  const handleChange = event => {
+  const handleChange = (event) => {
     const { name, value } = event.target;
 
     setFormState({
       ...formState,
-      [name]: value
+      [name]: value,
     });
   };
 
   // submit form
-  const handleFormSubmit = async event => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     try {
       const { data } = await login({
-        variables: { ...formState }
+        variables: { ...formState },
       });
 
       Auth.login(data.login.token);
@@ -34,9 +34,9 @@ const Login = props => {
 
     // clear form values
     setFormState({
-      username: '',
-      email: '',
-      password: ''
+      username: "",
+      email: "",
+      password: "",
     });
   };
 
@@ -45,46 +45,48 @@ const Login = props => {
       <div className="column is-half">
         <div className="card">
           <header className="card-header">
-            <p class="card-header-title is-centered">
-            Login
-            </p>
+            <p class="card-header-title is-centered">Login</p>
           </header>
           <div className="card-content">
-            <form onSubmit={handleFormSubmit}>  
-            <div className="field">
-            <label className="label">Email</label>
-            <div className="control has-icons-left has-icons-right">
-                <input className="input is-success" 
-                type="email" 
-                name="email" 
-                id="email" 
-                placeholder="Your email"  
-                value={formState.email}
-                onChange={handleChange}/>
-                <span className="icon is-small is-left">
-                <i className="fas fa-envelope"></i>
-                </span>
-                <span className="icon is-small is-right">
-                <i className="fas fa-exclamation-triangle"></i>
-                </span>
-            </div>
-           
-            </div>  
-            
-            <div className="field">
-            <label className="label">Password</label>
-            <p class="control has-icons-left">
-                <input className="input is-success"  
-                type="password" 
-                id="password" 
-                placeholder="Password"
-                value={formState.password}
-                onChange={handleChange}/>
-                <span className="icon is-small is-left">
-                <i className="fas fa-lock"></i>
-                </span>
-            </p>
-            </div>
+            <form onSubmit={handleFormSubmit}>
+              <div className="field">
+                <label className="label">Email</label>
+                <div className="control has-icons-left has-icons-right">
+                  <input
+                    className="input is-success"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your email"
+                    value={formState.email}
+                    onChange={handleChange}
+                  />
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-envelope"></i>
+                  </span>
+                  <span className="icon is-small is-right">
+                    <i className="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div className="field">
+                <label className="label">Password</label>
+                <div className="control has-icons-left has-icons-right">
+                  <input
+                    className="input is-success"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    value={formState.password}
+                    onChange={handleChange}
+                  />
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-lock"></i>
+                  </span>
+                </div>
+              </div>
               <button className="button is-success" type="submit">
                 Submit
               </button>

@@ -16,6 +16,8 @@ import CustomerDashboard from "./pages/CustomerDashboard";
 import VendorDashboard from "./pages/VendorDashboard";
 import Success from "./pages/Success";
 
+import "bulma/css/bulma.min.css";
+
 const client = new ApolloClient({
   request: (operation) => {
     const token = localStorage.getItem("id_token");

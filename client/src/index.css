@@ -66,6 +66,11 @@ img {
   padding: 60px;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .center-children-vertical {
   display: flex;
   flex-direction: column;
@@ -90,4 +95,8 @@ img {
 
 .large-font {
   font-size: 30px;
+}
+
+.button-center {
+  margin: auto 35%;
 }

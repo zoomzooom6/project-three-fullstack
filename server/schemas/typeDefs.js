@@ -48,6 +48,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    me: User
     helloWorld: String
     sushi: String
     categories: [Category]
