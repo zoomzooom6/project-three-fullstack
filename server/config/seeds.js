@@ -65,7 +65,7 @@ db.once("open", async () => {
       price: 2,
       description: "PRODUCT DESCRIPTION",
       quantity: 25,
-      image: "banana.jpg",
+      image: "banana.png",
       category: categories[1]._id,
     },
     {
@@ -73,7 +73,7 @@ db.once("open", async () => {
       price: 1,
       description: "PRODUCT DESCRIPTION",
       quantity: 10,
-      image: "carrots.jpg",
+      image: "carrots.png",
       category: categories[0]._id,
     },
     {
@@ -81,7 +81,7 @@ db.once("open", async () => {
       price: 15,
       description: "PRODUCT DESCRIPTION",
       quantity: 5,
-      image: "ribeye.jpg",
+      image: "ribeye.png",
       category: categories[2]._id,
     },
     {
@@ -89,7 +89,7 @@ db.once("open", async () => {
       price: 5,
       description: "PRODUCT DESCRIPTION",
       quantity: 10,
-      image: "icecream.jpg",
+      image: "icecream.png",
       category: categories[3]._id,
     },
     {
@@ -97,7 +97,7 @@ db.once("open", async () => {
       price: 3,
       description: "PRODUCT DESCRIPTION",
       quantity: 12,
-      image: "milk.jpg",
+      image: "milk.png",
       category: categories[4]._id,
     },
     {
@@ -105,7 +105,7 @@ db.once("open", async () => {
       price: 3,
       description: "PRODUCT DESCRIPTION",
       quantity: 50,
-      image: "strawberries.jpg",
+      image: "strawberries.png",
       category: categories[1]._id,
     },
     {
@@ -113,7 +113,7 @@ db.once("open", async () => {
       price: 1,
       description: "PRODUCT DESCRIPTION",
       quantity: 28,
-      image: "broccoli.jpg",
+      image: "broccoli.png",
       category: categories[0]._id,
     },
     {
@@ -121,7 +121,7 @@ db.once("open", async () => {
       price: 25,
       description: "PRODUCT DESCRIPTION",
       quantity: 5,
-      image: "salmon.jpg",
+      image: "salmon.png",
       category: categories[2]._id,
     },
     {
@@ -129,7 +129,7 @@ db.once("open", async () => {
       price: 12,
       description: "PRODUCT DESCRIPTION",
       quantity: 8,
-      image: "mooncake.jpg",
+      image: "mooncake.png",
       category: categories[3]._id,
     },
     {
@@ -137,7 +137,7 @@ db.once("open", async () => {
       price: 4,
       description: "PRODUCT DESCRIPTION",
       quantity: 7,
-      image: "cream.jpg",
+      image: "cream.png",
       category: categories[4]._id,
     },
   ]);
