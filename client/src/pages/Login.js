@@ -27,6 +27,7 @@ const Login = props => {
         variables: { ...formState }
       });
 
+      console.log(data);
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
@@ -46,45 +47,44 @@ const Login = props => {
         <div className="card">
           <header className="card-header">
             <p class="card-header-title is-centered">
-            Login
+              Login
             </p>
           </header>
           <div className="card-content">
-            <form onSubmit={handleFormSubmit}>  
-            <div className="field">
-            <label className="label">Email</label>
-            <div className="control has-icons-left has-icons-right">
-                <input className="input is-success" 
-                type="email" 
-                name="email" 
-                id="email" 
-                placeholder="Your email"  
-                value={formState.email}
-                onChange={handleChange}/>
-                <span className="icon is-small is-left">
-                <i className="fas fa-envelope"></i>
-                </span>
-                <span className="icon is-small is-right">
-                <i className="fas fa-exclamation-triangle"></i>
-                </span>
-            </div>
-           
-            </div>  
-            
-            <div className="field">
-            <label className="label">Password</label>
-            <p class="control has-icons-left">
-                <input className="input is-success"  
-                type="password" 
-                id="password" 
-                placeholder="Password"
-                value={formState.password}
-                onChange={handleChange}/>
-                <span className="icon is-small is-left">
-                <i className="fas fa-lock"></i>
-                </span>
-            </p>
-            </div>
+            <form onSubmit={handleFormSubmit}>
+              <div className="field">
+                <label className="label">Email</label>
+                <div className="control has-icons-left has-icons-right">
+                  <input className="input is-success"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    value={formState.email}
+                    onChange={handleChange} />
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-envelope"></i>
+                  </span>
+                  <span className="icon is-small is-right">
+                    <i className="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div className="field">
+                <label className="label">Password</label>
+                <p class="control has-icons-left">
+                  <input className="input is-success"
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    defaultValue={formState.password}
+                    onChange={handleChange} />
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
               <button className="button is-success" type="submit">
                 Submit
               </button>

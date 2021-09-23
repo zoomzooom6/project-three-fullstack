@@ -90,7 +90,7 @@ const Signup = () => {
                 type="password" 
                 id="password" 
                 placeholder="Password"
-                value={formState.password}
+                defaultValue={formState.password}
                 onChange={handleChange}/>
                 <span className="icon is-small is-left">
                 <i className="fas fa-lock"></i>
