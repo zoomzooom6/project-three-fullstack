@@ -25,6 +25,8 @@ Please visit the deployment link above.
 To use this application, please visit the deployment link above.
 
 **Screenshots**:
+![Screen Shot 2021-09-21 at 5 31 47 AM (2)](https://user-images.githubusercontent.com/80941606/134598437-d2ce0174-7e4f-4039-8031-2de651da8d71.png)
+![Screen Shot 2021-09-21 at 5 32 23 AM (2)](https://user-images.githubusercontent.com/80941606/134598474-61568c45-98a0-48a4-bac6-314d04f9421d.png)
 
 ### Features
 This application allows customers to order food provided by local vendors. Specifically,
