@@ -3,12 +3,9 @@ import { useDispatch } from "react-redux";
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { ADD_TO_CART } from "../utils/actions";
 import { useQuery } from "@apollo/react-hooks";
-// import { useLazyQuery } from "@apollo/client";
 
 function Home() {
   const { data } = useQuery(QUERY_PRODUCTS);
-
-  // const [getProduct, { data: singleProductData }] = useLazyQuery(QUERY_PRODUCT);
 
   const dispatch = useDispatch();
 
@@ -19,11 +16,6 @@ function Home() {
         return item._id === id;
       }),
     });
-    // console.log(singleProductData);
-
-    // getProduct({
-    //   variables: { productId: id },
-    // });
   };
 
   console.log(data);
@@ -35,6 +27,7 @@ function Home() {
         <div className="product-list">
           {data.products.map((item) => (
             <div className="product-card" key={item._id}>
+              <img src={item.image} />
               <h1>{item.name}</h1>
               <h1>{item.description}</h1>
               <h1>{item.price}</h1>
