@@ -32,17 +32,16 @@ To use this application, please visit the deployment link above.
 This application allows customers to order food provided by local vendors. Specifically,
 - Use as a Customer to:
    - Create an Account
-   - ...
+   - Shop for products, services, and provide questions/feedback to vendors on the dashboard
+   - Pay for goods using Stripe
 - Use as a Vendor to:
    - Create an Account
-   - ...
+   - Post products, services, and respond to customer's questions/feedback on the dashboard
+   - Process payments through Stripe
 
 This application uses the following technologies to achieve this:
-- React
-- MongoDB
-- Mongoose ODM
-- Node.js
-- Express.js
+- Front-End: HTML, CSS, Bulma, JS, React, and Heroku
+- Back-End: Node.js, Express.js, MongoDB, Mongoose ODM, MongoDB Atlas, GraphQL, JWT, and Stripe
 
 ### Testing
 This application can be directly tested by visiting the deployment link above.
