@@ -27,7 +27,7 @@ function Home() {
         <div className="product-list">
           {data.products.map((item) => (
             <div className="product-card flex" key={item._id}>
-              <img src={item.image} className="margin-top-0" />
+              <img src={`/images/${item.image}`} className="margin-top-0" alt={"picture of " + item.name}/>
               <h1 className="text-align">{item.name}</h1>
               <h1 className="text-align">{item.description}</h1>
               <h1 className="text-align">{item.price}</h1>
