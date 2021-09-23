@@ -8,7 +8,7 @@ function Cart() {
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
+  const { data } = useQuery(QUERY_PRODUCTS);
 
   // const [getCheckout, { checkoutData }] = useLazyQuery(QUERY_CHECKOUT);
   // console.log(data);

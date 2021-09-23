@@ -24,7 +24,7 @@ function Checkout() {
     const productIds = [];
 
     state.cart[0].products.forEach((item) => {
-      productIds.push(item.id);
+      productIds.push(item._id);
     });
     console.log(productIds);
 

@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { User, Product, Store, Category } = require("../models");
+const { User, Product, Store, Category, Order } = require("../models");
 //import for JWT authentication
 const { signToken } = require("../utils/auth");
 
@@ -27,27 +27,13 @@ const resolvers = {
       }
       return user;
     },
-    products: async (parent, { category, name }) => {
-      const params = {};
-
-      if (category) {
-        params.category = category;
-      }
-
-      // if (name) {
-      //     params.name = {
-      //         $regex: name
-      //     }
-      // }
-
-      return await Product.find(params).populate("category");
+    products: async () => {
+      return Product.find();
     },
     product: async (parent, { _id }) => {
       return await Product.findById(_id);
     },
-    allProducts: async () => {
-      return Product.find();
-    },
+
     store: async (parent, { _id }) => {
       return await Store.findById(_id).populate("storeOwner");
     },

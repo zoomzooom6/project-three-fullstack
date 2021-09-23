@@ -17,7 +17,7 @@ const typeDefs = gql`
 
   type Product {
     _id: ID
-    productName: String
+    name: String
     price: Float
     description: String
     image: String
@@ -43,14 +43,19 @@ const typeDefs = gql`
     user: User
   }
 
+  type Checkout {
+    session: ID!
+  }
+
   type Query {
     helloWorld: String
     sushi: String
     categories: [Category]
     users: [User]
     user(_id: ID!): User
-    products(category: ID, productName: String): [Product]
+    products: [Product]
     product(_id: ID!): Product
+
     store(_id: ID!): Store
     stores: [Store]
     checkout(products: [ID]!): Checkout
@@ -74,7 +79,7 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     addOrder(products: [ID]!): Order
     addProduct(
-      productName: String!
+      name: String!
       price: Float!
       description: String
       quantity: Int
@@ -88,10 +93,6 @@ const typeDefs = gql`
       category: ID!
     ): Product
     createStore(storeName: String!, storeOwner: String!): Store
-  }
-
-  type Checkout {
-    session: ID
   }
 `;
 
