@@ -21,16 +21,16 @@ function Home() {
   console.log(data);
 
   return (
-    <div>
-      <h1>Products</h1>
+    <div className="center-children-vertical">
+      <h1 className="larger-font">Products</h1>
       {data && (
         <div className="product-list">
           {data.products.map((item) => (
-            <div className="product-card" key={item._id}>
-              <img src={item.image} />
-              <h1>{item.name}</h1>
-              <h1>{item.description}</h1>
-              <h1>{item.price}</h1>
+            <div className="product-card flex" key={item._id}>
+              <img src={item.image} className="margin-top-0" />
+              <h1 className="text-align">{item.name}</h1>
+              <h1 className="text-align">{item.description}</h1>
+              <h1 className="text-align">{item.price}</h1>
               <button onClick={() => addToCart(item._id)}>Add To Cart</button>
             </div>
           ))}

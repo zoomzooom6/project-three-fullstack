@@ -14,6 +14,7 @@ import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 import CustomerDashboard from "./pages/CustomerDashboard";
 import VendorDashboard from "./pages/VendorDashboard";
+import Success from "./pages/Success";
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -61,6 +62,7 @@ function App() {
                   path="/vendor-dashboard"
                   component={VendorDashboard}
                 />
+                <Route exact path="/success" component={Success} />
 
                 <Route component={NoMatch} />
               </Switch>

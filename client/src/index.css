@@ -55,13 +55,39 @@ img {
 }
 
 .product-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .product-card {
   border: black 2px solid;
   margin: 20px;
   padding: 60px;
+}
+
+.center-children-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 15%;
+}
+
+.margin-top-0 {
+  margin-top: -25%;
+}
+
+.larger-font {
+  font-size: 50px;
+}
+
+.large-font {
+  font-size: 30px;
 }
