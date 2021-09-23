@@ -23,6 +23,9 @@ export const QUERY_PRODUCT = gql`
   query ($productId: ID!) {
     product(productId: $productId) {
       name
+      id
+      price
+      seller
     }
   }
 `;

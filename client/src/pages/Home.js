@@ -8,20 +8,22 @@ import { useLazyQuery } from "@apollo/client";
 function Home() {
   const { data } = useQuery(QUERY_PRODUCTS);
 
-  const [getProduct, { data: singleProductData }] = useLazyQuery(QUERY_PRODUCT);
+  // const [getProduct, { data: singleProductData }] = useLazyQuery(QUERY_PRODUCT);
 
   const dispatch = useDispatch();
 
   const addToCart = (id) => {
     dispatch({
       type: ADD_TO_CART,
-      product: singleProductData,
+      product: data.products.filter((item) => {
+        return item.id === id;
+      }),
     });
-    console.log(singleProductData);
+    // console.log(singleProductData);
 
-    getProduct({
-      variables: { productId: id },
-    });
+    // getProduct({
+    //   variables: { productId: id },
+    // });
   };
 
   console.log(data);
@@ -34,9 +36,9 @@ function Home() {
           {data.products.map((item) => (
             <div className="product-card" key={item.id}>
               <h1>{item.name}</h1>
-              <h1>{item.description}</h1>
+              <h1>{item.id}</h1>
               <h1>{item.price}</h1>
-              <button onClick={addToCart(item.id)}>Add To Cart</button>
+              <button onClick={() => addToCart(item.id)}>Add To Cart</button>
             </div>
           ))}
         </div>
