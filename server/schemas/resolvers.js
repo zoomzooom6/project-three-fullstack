@@ -28,7 +28,7 @@ const resolvers = {
       return user;
     },
     products: async () => {
-      return Product.find();
+      return Product.find().populate('category');
     },
     product: async (parent, { _id }) => {
       return await Product.findById(_id);
