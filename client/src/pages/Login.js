@@ -19,16 +19,17 @@ const Login = props => {
   };
 
   // submit form
-  const handleFormSubmit = async event => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
-
+    console.log(event.target[0].value);
+    console.log(event.target[1].value);
     try {
-      const { data } = await login({
-        variables: { ...formState }
+      const mutationResponse = await login({
+        variables: { email: event.target[0].value, password: event.target[1].value }
       });
-
-      console.log(data);
-      Auth.login(data.login.token);
+      const token = mutationResponse.data.login.token;
+      console.log(mutationResponse);
+      Auth.login(token);
     } catch (e) {
       console.error(e);
     }
@@ -60,7 +61,7 @@ const Login = props => {
                     name="email"
                     id="email"
                     placeholder="Enter your email"
-                    value={formState.email}
+                    defaultValue={formState.email}
                     onChange={handleChange} />
                   <span className="icon is-small is-left">
                     <i className="fas fa-envelope"></i>
