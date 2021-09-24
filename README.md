@@ -39,7 +39,7 @@ Finished Customer Dashboard
 ![Screen Shot 2021-09-24 at 12 09 21 AM (2)](https://user-images.githubusercontent.com/80941606/134617331-c831ac2e-5a07-422c-94f2-1853fc505ed5.png)
 ![Screen Shot 2021-09-24 at 12 09 36 AM (2)](https://user-images.githubusercontent.com/80941606/134617340-21691051-c0cb-40c0-a5f0-b2029b68ed9e.png)
 
-Current Login Screenshots:
+Current Signup and Login Screenshots:
 ![Screen Shot 2021-09-24 at 12 18 29 AM (2)](https://user-images.githubusercontent.com/80941606/134617857-163c516c-a150-4697-9f40-a49eb3e6fef0.png)
 ![Screen Shot 2021-09-24 at 12 18 41 AM (2)](https://user-images.githubusercontent.com/80941606/134617881-8c617292-916b-4970-b6f9-042ef7d1a6c2.png)
 
