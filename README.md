@@ -34,7 +34,7 @@ Finished Vendor Dashboard:
 ![Screen Shot 2021-09-24 at 12 07 40 AM (2)](https://user-images.githubusercontent.com/80941606/134617276-f5d34c22-a2b4-4ae6-a15d-9758fc516283.png)
 ![Screen Shot 2021-09-24 at 12 08 26 AM (2)](https://user-images.githubusercontent.com/80941606/134617302-bdddac96-74c7-48a2-a529-11c3f6a1cf71.png)
 
-Finished Customer Dashboard
+Finished Customer Dashboard:
 ![Screen Shot 2021-09-24 at 12 09 07 AM (2)](https://user-images.githubusercontent.com/80941606/134617313-4da56635-b5e1-4452-9a61-c6cfe7652d74.png)
 ![Screen Shot 2021-09-24 at 12 09 21 AM (2)](https://user-images.githubusercontent.com/80941606/134617331-c831ac2e-5a07-422c-94f2-1853fc505ed5.png)
 ![Screen Shot 2021-09-24 at 12 09 36 AM (2)](https://user-images.githubusercontent.com/80941606/134617340-21691051-c0cb-40c0-a5f0-b2029b68ed9e.png)
