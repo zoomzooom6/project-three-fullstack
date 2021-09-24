@@ -9,6 +9,10 @@
 
 **Video Tutorial Links**: N/A
 
+**Presentation Link**: https://docs.google.com/presentation/d/1y8AetM4xeX3CYAR0QooA9qU1ARStyLX3zePpkNUOEkI/edit?usp=sharing
+
+**Proposal Link**: https://docs.google.com/document/d/1X222O2N7QbGSaYO99SLMTs7WWW44sAr1/edit?usp=sharing&ouid=103862841931365976162&rtpof=true&sd=true
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
