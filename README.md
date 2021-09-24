@@ -1,7 +1,9 @@
 # Let's Eat a Deal!
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Description**: This is a full-stack web application built using a MERN stack that connects small grocery store vendors to customers in order to help vendors sell soon-to-be expired groceries at discounted prices to customers. Small grocery stores may not be able to sell groceries on time which leads to financial loss and food wastage. Consequently, we developed an application that will bring these soon-to-be expired foods to the attention of customers which can enhance the foods’ sales at discounted prices, hence saving customers money on grocery shopping and preventing food wastage.
+**Description**: Our food distribution platform built using a MERN stack connects small grocery store vendors to customers in order to help vendors sell soon-to-be expired groceries at discounted prices to customers, thus reducing vendors’ food wastage and customers’ food-related expenses.
+
+**Note**: We are currently in the process of debugging the application and rendering the complete front-end pages as shown below.
 
 **Deployment Link**: https://lets-eat-a-deal.herokuapp.com/
 
@@ -25,8 +27,20 @@ Please visit the deployment link above.
 To use this application, please visit the deployment link above.
 
 **Screenshots**:
-![Screen Shot 2021-09-21 at 5 31 47 AM (2)](https://user-images.githubusercontent.com/80941606/134598437-d2ce0174-7e4f-4039-8031-2de651da8d71.png)
-![Screen Shot 2021-09-21 at 5 32 23 AM (2)](https://user-images.githubusercontent.com/80941606/134598474-61568c45-98a0-48a4-bac6-314d04f9421d.png)
+Finished Vendor Dashboard:
+![Screen Shot 2021-09-24 at 12 07 19 AM (2)](https://user-images.githubusercontent.com/80941606/134617228-33a3304d-1969-4669-967c-19177010959c.png)
+![Screen Shot 2021-09-24 at 12 07 32 AM (2)](https://user-images.githubusercontent.com/80941606/134617238-d6b2a7c9-5572-45d7-85dd-3f16b7fbdcc3.png)
+![Screen Shot 2021-09-24 at 12 07 40 AM (2)](https://user-images.githubusercontent.com/80941606/134617276-f5d34c22-a2b4-4ae6-a15d-9758fc516283.png)
+![Screen Shot 2021-09-24 at 12 08 26 AM (2)](https://user-images.githubusercontent.com/80941606/134617302-bdddac96-74c7-48a2-a529-11c3f6a1cf71.png)
+
+Finished Customer Dashboard
+![Screen Shot 2021-09-24 at 12 09 07 AM (2)](https://user-images.githubusercontent.com/80941606/134617313-4da56635-b5e1-4452-9a61-c6cfe7652d74.png)
+![Screen Shot 2021-09-24 at 12 09 21 AM (2)](https://user-images.githubusercontent.com/80941606/134617331-c831ac2e-5a07-422c-94f2-1853fc505ed5.png)
+![Screen Shot 2021-09-24 at 12 09 36 AM (2)](https://user-images.githubusercontent.com/80941606/134617340-21691051-c0cb-40c0-a5f0-b2029b68ed9e.png)
+
+Current Login Screenshots:
+![Screen Shot 2021-09-24 at 12 18 29 AM (2)](https://user-images.githubusercontent.com/80941606/134617857-163c516c-a150-4697-9f40-a49eb3e6fef0.png)
+![Screen Shot 2021-09-24 at 12 18 41 AM (2)](https://user-images.githubusercontent.com/80941606/134617881-8c617292-916b-4970-b6f9-042ef7d1a6c2.png)
 
 ### Features
 This application allows customers to order food provided by local vendors. Specifically,
@@ -39,7 +53,7 @@ This application allows customers to order food provided by local vendors. Speci
    - Post products, services, and respond to customer's questions/feedback on the dashboard
    - Process payments through Stripe
 
-This application uses the following technologies to achieve this:
+This application primarily uses the following technologies to achieve this:
 - Front-End: HTML, CSS, Bulma, JS, React, and Heroku
 - Back-End: Node.js, Express.js, MongoDB, Mongoose ODM, MongoDB Atlas, GraphQL, JWT, and Stripe
 
