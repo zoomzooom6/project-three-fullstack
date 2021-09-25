@@ -3,6 +3,8 @@
 
 **Description**: Our food distribution platform built using a MERN stack connects small grocery store vendors to customers in order to help vendors sell soon-to-be expired groceries at discounted prices to customers, thus reducing vendors’ food wastage and customers’ food-related expenses.
 
+**Motivation**: Small grocery stores face losses by the inability to sell items before the expiry dates. We came up with a solution to build a website that will attract customers with deals on items that are coming close to expiry. 
+
 **Note**: We are currently in the process of debugging the application and rendering the complete front-end pages as shown below.
 
 **Deployment Link**: https://lets-eat-a-deal.herokuapp.com/
