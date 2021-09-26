@@ -34,6 +34,8 @@ To use this application, please visit the deployment link above.
 
 **Screenshots**:
 
+The following pages can be found in the "./client/public/templates" directory as "vendor-dashboard.html" and "customer-dashboard.html".
+
 Finished Vendor Dashboard:
 ![Screen Shot 2021-09-24 at 12 07 19 AM (2)](https://user-images.githubusercontent.com/80941606/134617228-33a3304d-1969-4669-967c-19177010959c.png)
 ![Screen Shot 2021-09-24 at 12 07 32 AM (2)](https://user-images.githubusercontent.com/80941606/134617238-d6b2a7c9-5572-45d7-85dd-3f16b7fbdcc3.png)
