@@ -5,7 +5,7 @@
 
 **Motivation**: Small grocery stores face losses by the inability to sell items before the expiry dates. We came up with a solution to build a website that will attract customers with deals on items that are coming close to expiry. 
 
-**Note**: We are currently in the process of debugging the application and improving the rendering of the complete front-end pages using React as shown below.
+**Note**: We are currently in the process of debugging the Heroku-deployed application and improving the rendering of the complete front-end pages using React as shown below. If you would like to test our fully-functioning application, please do so locally using localhost:3001.
 
 **Deployment Link**: https://lets-eat-a-deal.herokuapp.com/
 
