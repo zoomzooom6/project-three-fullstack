@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { QUERY_PRODUCTS } from "../utils/queries";
-import { ADD_TO_CART } from "../utils/actions";
+import { ADD_TO_CART, UPDATE_PRODUCTS } from "../utils/actions";
 import { useQuery } from "@apollo/react-hooks";
 
 function Home() {
@@ -17,6 +17,17 @@ function Home() {
       }),
     });
   };
+
+  useEffect(() => {
+    if (data) {
+      dispatch({
+        type: UPDATE_PRODUCTS,
+        products: data.products
+      });
+    } else if (!loading) {
+      console.log("you are currently offline");
+    }
+  }, [loading, data, dispatch])
 
   console.log({data});
 
