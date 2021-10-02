@@ -18,7 +18,7 @@ function Home() {
     });
   };
 
-  console.log(data);
+  console.log({data});
 
   return (
     <div className="center-children-vertical">
