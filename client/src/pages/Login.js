@@ -21,15 +21,24 @@ const Login = props => {
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(event.target[0].value);
-    console.log(event.target[1].value);
+    //console.log(event.target[0].value);
+    //console.log(event.target[1].value);
     try {
       const mutationResponse = await login({
         variables: { email: event.target[0].value, password: event.target[1].value }
       });
       const token = mutationResponse.data.login.token;
-      console.log(mutationResponse);
+      //console.log(mutationResponse);
       Auth.login(token);
+      //console.log(mutationResponse.data.login.user.account)
+      const account = mutationResponse.data.login.user.account
+      if (account === 'seller') {
+        console.log("you have logged onto a seller account");
+        window.location.assign('/VendorDashboard');
+      } else {
+        console.log("you have logged onto a buyer account");
+        window.location.assign('/CustomerDashboard');
+      }
     } catch (e) {
       console.error(e);
     }

@@ -63,7 +63,7 @@ function App() {
                 />
                 <Route
                   exact
-                  path="/vendor-dashboard"
+                  path="/vendordashboard"
                   component={VendorDashboard}
                 />
                 <Route exact path="/success" component={Success} />
