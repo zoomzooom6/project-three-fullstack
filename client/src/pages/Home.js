@@ -5,7 +5,7 @@ import { ADD_TO_CART, UPDATE_PRODUCTS } from "../utils/actions";
 import { useQuery } from "@apollo/react-hooks";
 
 function Home() {
-  const { data } = useQuery(QUERY_PRODUCTS);
+  const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   const dispatch = useDispatch();
 
