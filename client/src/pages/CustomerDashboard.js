@@ -149,8 +149,7 @@ const CustomerDashboard = () => {
                           
                           </div>
                           <div class="media-content">
-                          <p class="title is-4">John Smith</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          
                           </div>
                       </div>
           
@@ -186,8 +185,7 @@ const CustomerDashboard = () => {
                           
                           </div>
                           <div class="media-content">
-                          <p class="title is-4">John Smith</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          
                           </div>
                       </div>
           
@@ -223,8 +221,7 @@ const CustomerDashboard = () => {
                           
                           </div>
                           <div class="media-content">
-                          <p class="title is-4">John Smith</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          
                           </div>
                       </div>
           
@@ -260,8 +257,7 @@ const CustomerDashboard = () => {
                           
                           </div>
                           <div class="media-content">
-                          <p class="title is-4">John Smith</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          
                           </div>
                       </div>
           
@@ -299,8 +295,7 @@ const CustomerDashboard = () => {
                           
                           </div>
                           <div class="media-content">
-                          <p class="title is-4">John Smith</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          
                           </div>
                       </div>
           
@@ -336,8 +331,7 @@ const CustomerDashboard = () => {
                           
                           </div>
                           <div class="media-content">
-                          <p class="title is-4">John Smith</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          
                           </div>
                       </div>
           
@@ -383,8 +377,7 @@ const CustomerDashboard = () => {
                           
                           </div>
                           <div class="media-content">
-                          <p class="title is-4">John Smith</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          
                           </div>
                       </div>
           
@@ -457,8 +450,6 @@ const CustomerDashboard = () => {
               </div>
           </div>
       </form>
-
-      <Helmet><script src={script}></script></Helmet>
   </main>
   );
 };

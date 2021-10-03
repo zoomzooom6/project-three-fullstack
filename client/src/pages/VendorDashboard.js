@@ -661,9 +661,7 @@ const VendorDashboard = () => {
             </div>
         </div>
     </form>
-
-    <Helmet><script src={script}></script></Helmet>
-    </main>
+  </main>
   );
 };
 
