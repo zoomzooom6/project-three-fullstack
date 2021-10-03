@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <div className="center-children-vertical">
-      <h1 className="larger-font">Products</h1>
+      <h1 className="larger-font">Checkout Out Discounted Local Products Below!</h1>
       {data && (
         <div className="product-list">
           {data.products.map((item) => (

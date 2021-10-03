@@ -52,7 +52,7 @@ const Header = () => {
   return (
     <nav class="navbar is-success" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
+            <a class="navbar-item" href="https://lets-eat-a-deal.herokuapp.com/">
                 <img src={logo} width="112" height="28" class="navbar-logo" />
             </a>
       
@@ -65,7 +65,7 @@ const Header = () => {
       
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="https://lets-eat-a-deal.herokuapp.com/">
                 Home
                 </a>
         
