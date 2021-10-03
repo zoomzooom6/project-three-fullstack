@@ -70,7 +70,7 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Buy</a>
+                                <a href="/customerdashboard" class="card-footer-item">Buy</a>
                                 
                             </footer>
                         </div>
@@ -106,7 +106,7 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Buy</a>
+                                <a href="/customerdashboard" class="card-footer-item">Buy</a>
                                 
                             </footer>
                         </div>
@@ -142,7 +142,7 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Buy</a>
+                                <a href="/customerdashboard" class="card-footer-item">Buy</a>
                                 
                             </footer>
                         </div>
@@ -178,7 +178,7 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Buy</a>
+                                <a href="/customerdashboard" class="card-footer-item">Buy</a>
                                 
                             </footer>
                         </div>
@@ -216,7 +216,7 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Buy</a>
+                                <a href="/customerdashboard" class="card-footer-item">Buy</a>
                                 
                             </footer>
                         </div>
@@ -252,7 +252,7 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Buy</a>
+                                <a href="/customerdashboard" class="card-footer-item">Buy</a>
                                 
                             </footer>
                         </div>
