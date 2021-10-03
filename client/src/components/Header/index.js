@@ -85,10 +85,10 @@ const Header = () => {
             <div class="navbar-end">
                 <div class="navbar-item">
                 <div class="buttons">
-                    <a class="button is-info" href="#">
+                    <a class="button is-info" href="/signup">
                     <strong>Signup</strong>
                     </a>
-                    <a class="button is-light" href="#">
+                    <a class="button is-light" href="/login">
                     Login
                     </a>
                     <a class="button is-warning" href="#">
