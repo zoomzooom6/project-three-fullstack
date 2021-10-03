@@ -41,6 +41,7 @@ function Home() {
   return (
     <div className="center-children-vertical">
       <h1 className="larger-font">Checkout Out Discounted Local Products Below!</h1>
+      <br />
       <div class="container">
         <div class="columns">
             <div class="card column is-one-quarter">
@@ -69,8 +70,8 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Add</a>
-                                <a href="#" class="card-footer-item">Remove</a>
+                                <a href="#" class="card-footer-item">Buy</a>
+                                
                             </footer>
                         </div>
                         <br />
@@ -105,8 +106,8 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Add</a>
-                                <a href="#" class="card-footer-item">Remove</a>
+                                <a href="#" class="card-footer-item">Buy</a>
+                                
                             </footer>
                         </div>
                         <br />
@@ -141,8 +142,8 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Add</a>
-                                <a href="#" class="card-footer-item">Remove</a>
+                                <a href="#" class="card-footer-item">Buy</a>
+                                
                             </footer>
                         </div>
                         <br />
@@ -177,8 +178,8 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Add</a>
-                                <a href="#" class="card-footer-item">Remove</a>
+                                <a href="#" class="card-footer-item">Buy</a>
+                                
                             </footer>
                         </div>
                         <br />
@@ -215,8 +216,8 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Add</a>
-                                <a href="#" class="card-footer-item">Remove</a>
+                                <a href="#" class="card-footer-item">Buy</a>
+                                
                             </footer>
                         </div>
                         <br />
@@ -251,8 +252,8 @@ function Home() {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Add</a>
-                                <a href="#" class="card-footer-item">Remove</a>
+                                <a href="#" class="card-footer-item">Buy</a>
+                                
                             </footer>
                         </div>
                         <br />
