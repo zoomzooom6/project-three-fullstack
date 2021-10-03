@@ -461,8 +461,8 @@ const VendorDashboard = () => {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Edit</a>
-                                <a href="#" class="card-footer-item">Delete</a>
+                                {/* <a href="#" class="card-footer-item">Edit</a>
+                                <a href="#" class="card-footer-item">Delete</a> */}
                             </footer>
                         </div>
                         <br />
@@ -477,7 +477,7 @@ const VendorDashboard = () => {
 
     <h1 class="title is-1" id="add-service"> Add Service</h1>
 
-    <form>
+    <form disabled>
         <div class="field">
             <label class="label">Service</label>
             <div class="control">
@@ -559,7 +559,7 @@ const VendorDashboard = () => {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Save</a>
+                                {/* <a href="#" class="card-footer-item">Save</a> */}
                                 <a href="#" class="card-footer-item">Delete</a>
                             </footer>
                         </div>
@@ -595,7 +595,7 @@ const VendorDashboard = () => {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Save</a>
+                                {/* <a href="#" class="card-footer-item">Save</a> */}
                                 <a href="#" class="card-footer-item">Delete</a>
                             </footer>
                         </div>
@@ -611,7 +611,7 @@ const VendorDashboard = () => {
 
     <h1 class="title is-1" id="help-desk">Customer Help Desk</h1>
 
-    <form>
+    <form disabled>
         <div class="field">
             <label class="label">Employee's Email</label>
             <div class="control has-icons-left has-icons-right">

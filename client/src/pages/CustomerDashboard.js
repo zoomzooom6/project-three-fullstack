@@ -385,7 +385,7 @@ const CustomerDashboard = () => {
                           <br /><br />
                           <div class="card">
                               <footer class="card-footer">
-                                  <a href="#" class="card-footer-item">Select</a>
+                                  {/* <a href="#" class="card-footer-item">Select</a> */}
                               </footer>
                           </div>
                           <br />
@@ -400,7 +400,7 @@ const CustomerDashboard = () => {
 
       <h1 class="title is-1" id="help-desk">Customer Help Desk</h1>
 
-      <form>
+      <form disabled>
           <div class="field">
               <label class="label">Your Email</label>
               <div class="control has-icons-left has-icons-right">
