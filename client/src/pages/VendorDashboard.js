@@ -1,13 +1,13 @@
 import React from "react";
-import strawberry from "../../public/templates/images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg";
-import banana from "../../public/templates/images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg";
-import papaya from "../../public/templates/images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg";
-import lemon from "../../public/templates/images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg";
-import orange from "../../public/templates/images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg";
-import avocado from "../../public/templates/images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg";
-import store from "../../public/templates/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg";
-import customer1 from "../../public/templates/images/customers/gemma-chua-tran-iCTcQqTXaCw-unsplash.jpg";
-import customer2 from "../../public/templates/images/customers/iam_os-FrU6VeUe0YM-unsplash.jpg";
+import strawberry from "../assets/images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg";
+import banana from "../assets/images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg";
+import papaya from "../assets/images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg";
+import lemon from "../assets/images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg";
+import orange from "../assets/images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg";
+import avocado from "../assets/images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg";
+import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg";
+import customer1 from "../assets/images/customers/gemma-chua-tran-iCTcQqTXaCw-unsplash.jpg";
+import customer2 from "../assets/images/customers/iam_os-FrU6VeUe0YM-unsplash.jpg";
 
 const VendorDashboard = () => {
   return (
