@@ -1,4 +1,13 @@
 import React from "react";
+import strawberry from "../../public/templates/images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg";
+import banana from "../../public/templates/images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg";
+import papaya from "../../public/templates/images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg";
+import lemon from "../../public/templates/images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg";
+import orange from "../../public/templates/images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg";
+import avocado from "../../public/templates/images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg";
+import store from "../../public/templates/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg";
+import customer1 from "../../public/templates/images/customers/gemma-chua-tran-iCTcQqTXaCw-unsplash.jpg";
+import customer2 from "../../public/templates/images/customers/iam_os-FrU6VeUe0YM-unsplash.jpg";
 
 const VendorDashboard = () => {
   return (
@@ -6,18 +15,6 @@ const VendorDashboard = () => {
       <nav class="navbar is-success" role="navigation" aria-label="main navigation">
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">        
-                <a class="navbar-item" href="#products">
-                Customer Products
-                </a>
-
-                <a class="navbar-item" href="#services">
-                Customer Services
-                </a>
-
-                <a class="navbar-item" href="#help-desk">
-                Customer Help Desk
-                </a>
-
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                         Orders
@@ -71,19 +68,6 @@ const VendorDashboard = () => {
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-info" href="#">
-                    <strong>Signup</strong>
-                    </a>
-                    <a class="button is-light" href="#">
-                    Login
-                    </a>
-                </div>
                 </div>
             </div>
         </div>
@@ -158,62 +142,58 @@ const VendorDashboard = () => {
 
     <div class="container">
         <div class="columns">
+        <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src={strawberry} alt="Strawberry" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          
+                          </div>
+                          <div class="media-content">
+                          
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          <b>Item</b>: Strawberry
+                          <br />
+                          <b>Price</b>: $0.99
+                          <br />
+                          <b>Expiry Date</b>: 2021-10-26
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                              <a href="#" class="card-footer-item">Edit</a>
+                              <a href="#" class="card-footer-item">Delete</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
+
+
+        
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg" alt="Strawberry" />
+                        <img src={banana} alt="Banana" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                        </div>
-                    </div>
-        
-                    <div class="content">
-                        <b>Item</b>: Strawberry
-                        <br />
-                        <b>Price</b>: $0.99
-                        <br />
-                        <b>Expiry Date</b>: 2021-10-26
-                        <br /><br />
-                        <div class="card">
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Edit</a>
-                                <a href="#" class="card-footer-item">Delete</a>
-                            </footer>
-                        </div>
-                        <br />
-                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="card column is-one-quarter">
-                <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="./images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg" alt="Banana" />
-                    </figure>
-                </div>
-        
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
-                        </div>
-                        <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         
@@ -239,20 +219,17 @@ const VendorDashboard = () => {
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg" alt="Papaya" />
+                        <img src={papaya} alt="Papaya" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         
@@ -278,20 +255,17 @@ const VendorDashboard = () => {
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg" alt="Lemon" />
+                        <img src={lemon} alt="Lemon" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         
@@ -319,20 +293,17 @@ const VendorDashboard = () => {
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg" alt="Orange" />
+                        <img src={orange} alt="Orange" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         
@@ -358,20 +329,17 @@ const VendorDashboard = () => {
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg" alt="Avocado" />
+                        <img src={avocado} alt="Avocado" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         
@@ -473,20 +441,17 @@ const VendorDashboard = () => {
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" alt="Store" />
+                        <img src={store} alt="Store" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         
@@ -570,20 +535,17 @@ const VendorDashboard = () => {
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/customers/gemma-chua-tran-iCTcQqTXaCw-unsplash.jpg" alt="Customer" />
+                        <img src={customer1} alt="Customer" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         
@@ -609,20 +571,17 @@ const VendorDashboard = () => {
             <div class="card column is-one-quarter">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="./images/customers/iam_os-FrU6VeUe0YM-unsplash.jpg" alt="Customer" />
+                        <img src={customer2} alt="Customer" />
                     </figure>
                 </div>
         
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
+
                         </div>
                         <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        
                         </div>
                     </div>
         

@@ -53,7 +53,7 @@ const Header = () => {
     <nav class="navbar is-success" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
-                <img src="./images/IMG_0992.PNG" width="112" height="28" class="navbar-logo" />
+                <img src={logo} width="112" height="28" class="navbar-logo" />
             </a>
       
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -80,50 +80,6 @@ const Header = () => {
                 <a class="navbar-item" href="#help-desk">
                 Help Desk
                 </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Orders
-                    </a>
-            
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item button" href="#" disabled>
-                        Orders Recieved
-                        </a>
-                        <a class="navbar-item button" href="#" disabled>
-                        Orders Shipped
-                        </a>
-                        <hr class="navbar-divider" />
-                        <a class="navbar-item button" href="#" disabled>
-                        Submit a Vendor Review
-                        </a>
-                    </div>
-                </div>
-        
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Account
-                    </a>
-                    
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item button" href="#" disabled>
-                        Update Your Information
-                        </a>                        
-                        <a class="navbar-item button" href="#" disabled>
-                        Settings & Privacy
-                        </a>
-                        <a class="navbar-item button" href="#" disabled>
-                        Help & Support
-                        </a>
-                        <a class="navbar-item button" href="#" disabled>
-                        Display & Accessibility
-                        </a>
-                        <hr class="navbar-divider" />
-                        <a class="navbar-item button" href="#" disabled>
-                        Provide Feedback
-                        </a>
-                    </div>
-                </div>
             </div>
         
             <div class="navbar-end">
