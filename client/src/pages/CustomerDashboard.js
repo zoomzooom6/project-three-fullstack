@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import strawberry from "../assets/images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg";
 import banana from "../assets/images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg";
 import papaya from "../assets/images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg";
@@ -6,52 +7,60 @@ import lemon from "../assets/images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg";
 import orange from "../assets/images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg";
 import avocado from "../assets/images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg";
 import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg";
+import script from "../assets/js/script.js";
 
 const CustomerDashboard = () => {
   return (
   <main>
-      <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-              Orders
-          </a>
-          <div class="navbar-dropdown">
-              <a class="navbar-item button" href="#" disabled>
-              Orders Recieved
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-              Orders Shipped
-              </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item button" href="#" disabled>
-              Submit a Vendor Review
-              </a>
-          </div>
-      </div>
+      <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">        
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Orders
+                    </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-            Account
-        </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item button" href="#" disabled>
+                        Orders Recieved
+                        </a>
+                        <a class="navbar-item button" href="#" disabled>
+                        Orders Shipped
+                        </a>
+                        <hr class="navbar-divider" />
+                        <a class="navbar-item button" href="#" disabled>
+                        Submit a Vendor Review
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Account
+                    </a>
 
-        <div class="navbar-dropdown">
-            <a class="navbar-item button" href="#" disabled>
-            Update Your Information
-            </a>                        
-            <a class="navbar-item button" href="#" disabled>
-            Settings & Privacy
-            </a>
-            <a class="navbar-item button" href="#" disabled>
-            Help & Support
-            </a>
-            <a class="navbar-item button" href="#" disabled>
-            Display & Accessibility
-            </a>
-            <hr class="navbar-divider" />
-            <a class="navbar-item button" href="#" disabled>
-            Provide Feedback
-            </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item button" href="#" disabled>
+                        Update Your Information
+                        </a>                        
+                        <a class="navbar-item button" href="#" disabled>
+                        Settings & Privacy
+                        </a>
+                        <a class="navbar-item button" href="#" disabled>
+                        Help & Support
+                        </a>
+                        <a class="navbar-item button" href="#" disabled>
+                        Display & Accessibility
+                        </a>
+                        <hr class="navbar-divider" />
+                        <a class="navbar-item button" href="#" disabled>
+                        Provide Feedback
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </nav>
 
       <div class="tabs is-toggle is-fullwidth" id="tabs">
           <ul>
@@ -448,6 +457,8 @@ const CustomerDashboard = () => {
               </div>
           </div>
       </form>
+
+      <Helmet><script src={script}></script></Helmet>
   </main>
   );
 };
