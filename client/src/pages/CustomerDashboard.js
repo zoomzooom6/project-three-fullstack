@@ -7,7 +7,6 @@ import lemon from "../assets/images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg";
 import orange from "../assets/images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg";
 import avocado from "../assets/images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg";
 import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg";
-import script from "../assets/js/script.js";
 
 const CustomerDashboard = () => {
   return (

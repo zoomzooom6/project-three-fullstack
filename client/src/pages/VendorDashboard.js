@@ -9,7 +9,6 @@ import avocado from "../assets/images/foods/thought-catalog-9aOswReDKPo-unsplash
 import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg";
 import customer1 from "../assets/images/customers/gemma-chua-tran-iCTcQqTXaCw-unsplash.jpg";
 import customer2 from "../assets/images/customers/iam_os-FrU6VeUe0YM-unsplash.jpg";
-import script from "../assets/js/script.js";
 
 const VendorDashboard = () => {
   return (
