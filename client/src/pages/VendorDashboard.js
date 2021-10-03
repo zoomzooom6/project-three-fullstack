@@ -477,25 +477,25 @@ const VendorDashboard = () => {
 
     <h1 class="title is-1" id="add-service"> Add Service</h1>
 
-    <form disabled>
+    <form>
         <div class="field">
             <label class="label">Service</label>
             <div class="control">
-            <input class="input" type="text" placeholder="Please enter the service's name" />
+            <input class="input" type="text" placeholder="Please enter the service's name" disabled />
             </div>
         </div>
         
         <div class="field">
             <label class="label">Additional Information</label>
             <div class="control">
-            <textarea class="textarea" placeholder="Please provide additional information about the service for the customer"></textarea>
+            <textarea class="textarea" placeholder="Please provide additional information about the service for the customer" disabled></textarea>
             </div>
         </div>
 
         <div class="field">
             <label class="label">Expiry Date</label>
             <div class="control">
-            <input class="input" type="date" value="2021-02-26" />
+            <input class="input" type="date" value="2021-02-26" disabled />
             </div>
         </div>
 
@@ -503,7 +503,7 @@ const VendorDashboard = () => {
 
         <div class="file has-name">
             <label class="file-label">
-              <input class="file-input" type="file" name="resume" />
+              <input class="file-input" type="file" name="resume" disabled />
               <span class="file-cta">
                 <span class="file-icon">
                   <i class="fas fa-upload"></i>
@@ -522,7 +522,7 @@ const VendorDashboard = () => {
                 
         <div class="field is-grouped">
             <div class="control">
-            <button class="button is-link">Submit</button>
+            <button class="button is-link" disabled>Submit</button>
             </div>
         </div>
     </form>
@@ -611,11 +611,11 @@ const VendorDashboard = () => {
 
     <h1 class="title is-1" id="help-desk">Customer Help Desk</h1>
 
-    <form disabled>
+    <form>
         <div class="field">
             <label class="label">Employee's Email</label>
             <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Please enter your email" />
+            <input class="input is-danger" type="email" placeholder="Please enter your email" disabled />
             <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
             </span>
@@ -629,7 +629,7 @@ const VendorDashboard = () => {
         <div class="field">
             <label class="label">Customer's Email</label>
             <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Please enter the customer's email" />
+            <input class="input is-danger" type="email" placeholder="Please enter the customer's email" disabled />
             <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
             </span>
@@ -643,20 +643,20 @@ const VendorDashboard = () => {
         <div class="field">
             <label class="label">Email Subject</label>
             <div class="control">
-            <input class="input" type="text" placeholder="Please enter the email's subject" />
+            <input class="input" type="text" placeholder="Please enter the email's subject" disabled />
             </div>
         </div>
         
         <div class="field">
             <label class="label">Concern Resolution Message</label>
             <div class="control">
-            <textarea class="textarea" placeholder="Please enter the resolution of the customer's concern(s)"></textarea>
+            <textarea class="textarea" placeholder="Please enter the resolution of the customer's concern(s)" disabled></textarea>
             </div>
         </div>
                 
         <div class="field is-grouped">
             <div class="control">
-            <button class="button is-link">Submit</button>
+            <button class="button is-link" disabled>Submit</button>
             </div>
         </div>
     </form>

@@ -400,11 +400,11 @@ const CustomerDashboard = () => {
 
       <h1 class="title is-1" id="help-desk">Customer Help Desk</h1>
 
-      <form disabled>
+      <form>
           <div class="field">
               <label class="label">Your Email</label>
               <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Please enter your email" />
+              <input class="input is-danger" type="email" placeholder="Please enter your email" disabled />
               <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
               </span>
@@ -418,7 +418,7 @@ const CustomerDashboard = () => {
           <div class="field">
               <label class="label">Vendor's Email</label>
               <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Please enter the vendor's email" />
+              <input class="input is-danger" type="email" placeholder="Please enter the vendor's email" disabled />
               <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
               </span>
@@ -432,20 +432,20 @@ const CustomerDashboard = () => {
           <div class="field">
               <label class="label">Email Subject</label>
               <div class="control">
-              <input class="input" type="text" placeholder="Please enter the email's subject" />
+              <input class="input" type="text" placeholder="Please enter the email's subject" disabled />
               </div>
           </div>
           
           <div class="field">
               <label class="label">Concern Message</label>
               <div class="control">
-              <textarea class="textarea" placeholder="Please enter your concern(s)"></textarea>
+              <textarea class="textarea" placeholder="Please enter your concern(s)" disabled></textarea>
               </div>
           </div>
                   
           <div class="field is-grouped">
               <div class="control">
-              <button class="button is-link">Submit</button>
+              <button class="button is-link" disabled>Submit</button>
               </div>
           </div>
       </form>
