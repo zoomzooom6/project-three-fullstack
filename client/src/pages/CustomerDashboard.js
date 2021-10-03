@@ -3,204 +3,417 @@ import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg
 
 const CustomerDashboard = () => {
   return (
-    <main>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="#">
-            Home
-          </a>
-
-          <a class="navbar-item" href="#products">
-            Local Products
-          </a>
-
-          <a class="navbar-item" href="#services">
-            Local Services
-          </a>
-
-          <a class="navbar-item" href="#help-desk">
-            Help Desk
-          </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Orders</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item button" href="#" disabled>
-                Orders Recieved
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Orders Shipped
-              </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item button" href="#" disabled>
-                Submit a Vendor Review
-              </a>
-            </div>
-          </div>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Account</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item button" href="#" disabled>
-                Update Your Information
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Settings & Privacy
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Help & Support
-              </a>
-              <a class="navbar-item button" href="#" disabled>
-                Display & Accessibility
-              </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item button" href="#" disabled>
-                Provide Feedback
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="tabs is-toggle is-fullwidth" id="tabs">
-        <ul>
-          <li className="is-active" data-tab="1">
-            <a href="google.ca">
-              <span className="icon is-small">
-                <i className="fas fa-info"></i>
-              </span>
-              <span>Customer Information</span>
-            </a>
-          </li>
-          <li data-tab="2">
-            <a href="google.ca">
-              <span className="icon is-small">
-                <i className="fas fa-file-invoice-dollar"></i>
-              </span>
-              <span>Recent Purchases</span>
-            </a>
-          </li>
-          <li data-tab="3">
-            <a href="google.ca">
-              <span className="icon is-small">
-                <i className="fas fa-users"></i>
-              </span>
-              <span>Favorite Vendors</span>
-            </a>
-          </li>
-          <li data-tab="4">
-            <a href="google.ca">
-              <span className="icon is-small">
-                <i className="fas fa-comment-alt"></i>
-              </span>
-              <span>Top Vendors</span>
-            </a>
-          </li>
-        </ul>
+  <main>
+      <div class="tabs is-toggle is-fullwidth" id="tabs">
+          <ul>
+              <li class="is-active" data-tab="1">
+                  <a>
+                  <span class="icon is-small"><i class="fas fa-info"></i></span>
+                  <span>Customer Information</span>
+                  </a>
+              </li>
+              <li data-tab="2">
+                  <a>
+                  <span class="icon is-small"><i class="fas fa-file-invoice-dollar"></i></span>
+                  <span>Recent Purchases</span>
+                  </a>
+              </li>
+              <li data-tab="3">
+                  <a>
+                  <span class="icon is-small"><i class="fas fa-users"></i></span>
+                  <span>Favorite Vendors</span>
+                  </a>
+              </li>
+              <li data-tab="4">
+                  <a>
+                  <span class="icon is-small"><i class="fas fa-comment-alt"></i></span>
+                  <span>Top Vendors</span>
+                  </a>
+              </li>
+          </ul>
       </div>
 
-      <div className="container">
-        <div className="columns">
-          <div className="card column is-one-quarter">
-            <div className="card-image">
-              <figure className="image is-4by3">
-                <img src={store} alt="Store" />
-              </figure>
-            </div>
+      <div id="tab-content" class="box">
+          <p class="is-active" data-content="1">
+              <b>Name</b>: Lindsey Smith
+              <br />
+              <b>Email</b>: <a href="mailto:lindsey@gmail.com">lindsey@gmail.com</a>
+              <br />
+              <b>Address</b>: 1425 Uptown Street
+              <br />
+              <b>Phone Number</b>: 456-456-8787
+          </p>
+          <p data-content="2">
+              <b>Recent Purchase Amount</b>: 10 Items
+              <br />
+              <b>Recent Purchase Cost</b>: $50
+              <br />
+              <b>Recent Purchase Items</b>: KitKat Chocolate Bar (x10)
+              <br />
+              <b>Checkouts Per Month</b>: 4
+          </p>
+          <p data-content="3">
+              <b>Organic Veg Inc.</b>: 10 Items Purchased This Week
+              <br />
+              <b>EatFreak Inc.</b>: 2 Items Purchased Last Week
+              <br />
+              <b>I Love Eating Inc.</b>: 7 Items Purchased This Last
+              <br />
+          </p>
+          <p data-content="4">
+              <b>Organic Veg Inc.</b>
+              <br />
+              <b>EatFreak Inc.</b>
+              <br />
+              <b>I Love Eating Inc.</b>
+              <br />
+          </p>
+      </div>
+      
+      <br />
 
-            <div className="card-content">
-              <div className="content">
-                Pickup now!
-                <br />
-                <br />
-                <div className="card">
-                  <footer className="card-footer">
-                    <a href="google.ca" className="card-footer-item">
-                      Select
-                    </a>
-                  </footer>
-                </div>
-                <br />
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      <h1 class="title is-1" id="products">Products</h1>
+
+      <br />
+
+      <div class="container">
+          <div class="columns">
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="./images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg" alt="Strawberry" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          <b>Item</b>: Strawberry
+                          <br />
+                          <b>Price</b>: $0.99
+                          <br />
+                          <b>Expiry Date</b>: 2021-10-26
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">Add</a>
+                                  <a href="#" class="card-footer-item">Remove</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
               </div>
-            </div>
+          
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="./images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg" alt="Banana" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          <b>Item</b>: Banana
+                          <br />
+                          <b>Price</b>: $1.99
+                          <br />
+                          <b>Expiry Date</b>: 2021-10-26
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">Add</a>
+                                  <a href="#" class="card-footer-item">Remove</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="./images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg" alt="Papaya" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          <b>Item</b>: Papaya
+                          <br />
+                          <b>Price</b>: $2.99
+                          <br />
+                          <b>Expiry Date</b>: 2021-10-26
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">Add</a>
+                                  <a href="#" class="card-footer-item">Remove</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="./images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg" alt="Lemon" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          <b>Item</b>: Lemon
+                          <br />
+                          <b>Price</b>: $1.99
+                          <br />
+                          <b>Expiry Date</b>: 2021-10-26
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">Add</a>
+                                  <a href="#" class="card-footer-item">Remove</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
+
+          <div class="columns">
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="./images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg" alt="Orange" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          <b>Item</b>: Orange
+                          <br />
+                          <b>Price</b>: $0.99
+                          <br />
+                          <b>Expiry Date</b>: 2021-10-26
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">Add</a>
+                                  <a href="#" class="card-footer-item">Remove</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="./images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg" alt="Avocado" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          <b>Item</b>: Avocado
+                          <br />
+                          <b>Price</b>: $2.99
+                          <br />
+                          <b>Expiry Date</b>: 2021-10-26
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">Add</a>
+                                  <a href="#" class="card-footer-item">Remove</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
 
-      <br />
+      <br /><br />
+
+      <h1 class="title is-1" id="services">Services</h1>
+
       <br />
 
-      <h1 className="title is-1" id="help-desk">
-        Customer Help Desk
-      </h1>
+      <div class="container">
+          <div class="columns">
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="./images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" alt="Store" />
+                      </figure>
+                  </div>
+          
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                          </div>
+                      </div>
+          
+                      <div class="content">
+                          Pickup now!
+                          <br /><br />
+                          <div class="card">
+                              <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">Select</a>
+                              </footer>
+                          </div>
+                          <br />
+                          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <br /><br />
+
+      <h1 class="title is-1" id="help-desk">Customer Help Desk</h1>
 
       <form>
-        <div className="field">
-          <label className="label">Your Email</label>
-          <div className="control has-icons-left has-icons-right">
-            <input
-              className="input is-danger"
-              type="email"
-              placeholder="Please enter your email"
-            />
-            <span className="icon is-small is-left">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span className="icon is-small is-right">
-              <i className="fas fa-exclamation-triangle"></i>
-            </span>
+          <div class="field">
+              <label class="label">Your Email</label>
+              <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="Please enter your email" />
+              <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                  <i class="fas fa-exclamation-triangle"></i>
+              </span>
+              </div>
+              <p class="help is-danger">This email is invalid</p>
           </div>
-          <p className="help is-danger">This email is invalid</p>
-        </div>
-
-        <div className="field">
-          <label className="label">Vendor's Email</label>
-          <div className="control has-icons-left has-icons-right">
-            <input
-              className="input is-danger"
-              type="email"
-              placeholder="Please enter the vendor's email"
-            />
-            <span className="icon is-small is-left">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span className="icon is-small is-right">
-              <i className="fas fa-exclamation-triangle"></i>
-            </span>
+          
+          <div class="field">
+              <label class="label">Vendor's Email</label>
+              <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="Please enter the vendor's email" />
+              <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                  <i class="fas fa-exclamation-triangle"></i>
+              </span>
+              </div>
+              <p class="help is-danger">This email is invalid</p>
           </div>
-          <p className="help is-danger">This email is invalid</p>
-        </div>
-
-        <div className="field">
-          <label className="label">Email Subject</label>
-          <div className="control">
-            <input
-              className="input"
-              type="text"
-              placeholder="Please enter the email's subject"
-            />
+          
+          <div class="field">
+              <label class="label">Email Subject</label>
+              <div class="control">
+              <input class="input" type="text" placeholder="Please enter the email's subject" />
+              </div>
           </div>
-        </div>
-
-        <div className="field">
-          <label className="label">Concern Message</label>
-          <div className="control">
-            <textarea
-              className="textarea"
-              placeholder="Please enter your concern(s)"
-            ></textarea>
+          
+          <div class="field">
+              <label class="label">Concern Message</label>
+              <div class="control">
+              <textarea class="textarea" placeholder="Please enter your concern(s)"></textarea>
+              </div>
           </div>
-        </div>
-
-        <div className="field is-grouped">
-          <div className="control">
-            <button className="button is-link">Submit</button>
+                  
+          <div class="field is-grouped">
+              <div class="control">
+              <button class="button is-link">Submit</button>
+              </div>
           </div>
-        </div>
       </form>
-    </main>
+  </main>
   );
 };
 
