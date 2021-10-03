@@ -559,8 +559,8 @@ const VendorDashboard = () => {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                {/* <a href="#" class="card-footer-item">Save</a> */}
-                                <a href="#" class="card-footer-item">Delete</a>
+                                {/* <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Delete</a> */}
                             </footer>
                         </div>
                         <br />
@@ -595,8 +595,8 @@ const VendorDashboard = () => {
                         <br /><br />
                         <div class="card">
                             <footer class="card-footer">
-                                {/* <a href="#" class="card-footer-item">Save</a> */}
-                                <a href="#" class="card-footer-item">Delete</a>
+                                {/* <a href="#" class="card-footer-item">Save</a>
+                                <a href="#" class="card-footer-item">Delete</a> */}
                             </footer>
                         </div>
                         <br />
