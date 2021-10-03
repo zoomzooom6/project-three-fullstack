@@ -3,6 +3,13 @@ import { useDispatch } from "react-redux";
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { ADD_TO_CART, UPDATE_PRODUCTS } from "../utils/actions";
 import { useQuery } from "@apollo/react-hooks";
+import strawberry from "../assets/images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg";
+import banana from "../assets/images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg";
+import papaya from "../assets/images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg";
+import lemon from "../assets/images/foods/lewis-fagg-Nl7eLS8E2Ss-unsplash.jpg";
+import orange from "../assets/images/foods/mae-mu-U1iYwZ8Dx7k-unsplash.jpg";
+import avocado from "../assets/images/foods/thought-catalog-9aOswReDKPo-unsplash.jpg";
+import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg";
 
 function Home() {
   const { loading, data } = useQuery(QUERY_PRODUCTS);
