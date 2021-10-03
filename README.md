@@ -5,7 +5,7 @@
 
 **Motivation**: Small grocery stores face losses by the inability to sell items before the expiry dates. We came up with a solution to build a website that will attract customers with deals on items that are coming close to expiry. 
 
-**Note**: We are currently in the process of debugging the Heroku-deployed application and improving the rendering of the complete front-end pages using React as shown below. If you would like to test our fully-functioning application, please do so locally using localhost:3001.
+**Note**: We are currently in the process of debugging the Heroku-deployed application and improving the rendering of the complete front-end pages using React as shown below.
 
 **Deployment Link**: https://lets-eat-a-deal.herokuapp.com/
 
@@ -61,6 +61,11 @@ This application allows customers to order food provided by local vendors. Speci
    - Create an Account
    - Post products, services, and respond to customer's questions/feedback on the dashboard
    - Process payments through Stripe
+
+Additional Features:
+- Uses a web manifest
+- Uses a service worker for offline functionality
+- Is installable
 
 This application primarily uses the following technologies to achieve this:
 - Front-End: HTML, CSS, Bulma, JS, React, and Heroku
