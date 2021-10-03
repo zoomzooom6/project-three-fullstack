@@ -623,7 +623,7 @@ const VendorDashboard = () => {
                 <i class="fas fa-exclamation-triangle"></i>
             </span>
             </div>
-            <p class="help is-danger">This email is invalid</p>
+            {/* <p class="help is-danger">This email is invalid</p> */}
         </div>
         
         <div class="field">
@@ -637,7 +637,7 @@ const VendorDashboard = () => {
                 <i class="fas fa-exclamation-triangle"></i>
             </span>
             </div>
-            <p class="help is-danger">This email is invalid</p>
+            {/* <p class="help is-danger">This email is invalid</p> */}
         </div>
         
         <div class="field">
