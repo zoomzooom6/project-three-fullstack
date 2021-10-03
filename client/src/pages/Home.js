@@ -41,229 +41,229 @@ function Home() {
   return (
     <div className="center-children-vertical">
       <h1 className="larger-font">Checkout Out Discounted Local Products Below!</h1>
-      {data && (
-        <div className="product-list">
-            <div class="container">
-              <div class="columns">
-                  <div class="card column is-one-quarter">
-                      <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src={strawberry} alt="Strawberry" />
-                          </figure>
-                      </div>
-              
-                      <div class="card-content">
-                          <div class="media">
-                              <div class="media-left">
-                              
-                              </div>
-                              <div class="media-content">
-                              
-                              </div>
-                          </div>
-              
-                          <div class="content">
-                              <b>Item</b>: Strawberry
-                              <br />
-                              <b>Price</b>: $0.99
-                              <br />
-                              <b>Expiry Date</b>: 2021-10-26
-                              <br /><br />
-                              <div class="card">
-                                  <footer class="card-footer">
-                                      <a href="#" class="card-footer-item">Add</a>
-                                      <a href="#" class="card-footer-item">Remove</a>
-                                  </footer>
-                              </div>
-                              <br />
-                              <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
-                          </div>
-                      </div>
-                  </div>
-              
-                  <div class="card column is-one-quarter">
-                      <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src={banana} alt="Banana" />
-                          </figure>
-                      </div>
-              
-                      <div class="card-content">
-                          <div class="media">
-                              <div class="media-left">
-                              
-                              </div>
-                              <div class="media-content">
-                              
-                              </div>
-                          </div>
-              
-                          <div class="content">
-                              <b>Item</b>: Banana
-                              <br />
-                              <b>Price</b>: $1.99
-                              <br />
-                              <b>Expiry Date</b>: 2021-10-26
-                              <br /><br />
-                              <div class="card">
-                                  <footer class="card-footer">
-                                      <a href="#" class="card-footer-item">Add</a>
-                                      <a href="#" class="card-footer-item">Remove</a>
-                                  </footer>
-                              </div>
-                              <br />
-                              <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
-                          </div>
-                      </div>
-                  </div>
-              
-                  <div class="card column is-one-quarter">
-                        <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src={papaya} alt="Papaya" />
-                          </figure>
+      <div class="container">
+        <div class="columns">
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src={strawberry} alt="Strawberry" />
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                        
                         </div>
-              
-                      <div class="card-content">
-                          <div class="media">
-                              <div class="media-left">
-                              
-                              </div>
-                              <div class="media-content">
-                              
-                              </div>
-                          </div>
-              
-                          <div class="content">
-                              <b>Item</b>: Papaya
-                              <br />
-                              <b>Price</b>: $2.99
-                              <br />
-                              <b>Expiry Date</b>: 2021-10-26
-                              <br /><br />
-                              <div class="card">
-                                  <footer class="card-footer">
-                                      <a href="#" class="card-footer-item">Add</a>
-                                      <a href="#" class="card-footer-item">Remove</a>
-                                  </footer>
-                              </div>
-                              <br />
-                              <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="card column is-one-quarter">
-                      <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src={lemon} alt="Lemon" />
-                          </figure>
-                      </div>
-              
-                      <div class="card-content">
-                            <div class="media">
-                              <div class="media-left">
-                              
-                              </div>
-                              <div class="media-content">
-                              
-                              </div>
-                            </div>
-              
-                          <div class="content">
-                              <b>Item</b>: Lemon
-                              <br />
-                              <b>Price</b>: $1.99
-                              <br />
-                              <b>Expiry Date</b>: 2021-10-26
-                              <br /><br />
-                              <div class="card">
-                                  <footer class="card-footer">
-                                      <a href="#" class="card-footer-item">Add</a>
-                                      <a href="#" class="card-footer-item">Remove</a>
-                                  </footer>
-                              </div>
-                              <br />
-                              <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="columns">
-                      <div class="card column is-one-quarter">
-                        <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src={orange} alt="Orange" />
-                          </figure>
-                        </div>
-              
-                        <div class="card-content">
-                            <div class="media">
-                              <div class="media-left">
-                              
-                              </div>
-                              <div class="media-content">
-                              
-                              </div>
-                            </div>
-              
-                            <div class="content">
-                              <b>Item</b>: Orange
-                              <br />
-                              <b>Price</b>: $0.99
-                              <br />
-                              <b>Expiry Date</b>: 2021-10-26
-                              <br /><br />
-                              <div class="card">
-                                  <footer class="card-footer">
-                                      <a href="#" class="card-footer-item">Add</a>
-                                      <a href="#" class="card-footer-item">Remove</a>
-                                  </footer>
-                              </div>
-                              <br />
-                              <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
-                            </div>
+                        <div class="media-content">
+                        
                         </div>
                     </div>
-              
-                    <div class="card column is-one-quarter">
-                        <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src={avocado} alt="Avocado" />
-                          </figure>
+        
+                    <div class="content">
+                        <b>Item</b>: Strawberry
+                        <br />
+                        <b>Price</b>: $0.99
+                        <br />
+                        <b>Expiry Date</b>: 2021-10-26
+                        <br /><br />
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Add</a>
+                                <a href="#" class="card-footer-item">Remove</a>
+                            </footer>
                         </div>
-              
-                        <div class="card-content">
-                            <div class="media">
-                              <div class="media-left">
-                              
-                              </div>
-                              <div class="media-content">
-                              
-                              </div>
-                            </div>
-              
-                            <div class="content">
-                              <b>Item</b>: Avocado
-                              <br />
-                              <b>Price</b>: $2.99
-                              <br />
-                              <b>Expiry Date</b>: 2021-10-26
-                              <br /><br />
-                              <div class="card">
-                                  <footer class="card-footer">
-                                      <a href="#" class="card-footer-item">Add</a>
-                                      <a href="#" class="card-footer-item">Remove</a>
-                                  </footer>
-                              </div>
-                              <br />
-                              <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
-                            </div>
-                        </div>
+                        <br />
+                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
                     </div>
                 </div>
+            </div>
+        
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src={banana} alt="Banana" />
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                        
+                        </div>
+                        <div class="media-content">
+                        
+                        </div>
+                    </div>
+        
+                    <div class="content">
+                        <b>Item</b>: Banana
+                        <br />
+                        <b>Price</b>: $1.99
+                        <br />
+                        <b>Expiry Date</b>: 2021-10-26
+                        <br /><br />
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Add</a>
+                                <a href="#" class="card-footer-item">Remove</a>
+                            </footer>
+                        </div>
+                        <br />
+                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card column is-one-quarter">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src={papaya} alt="Papaya" />
+                    </figure>
+                  </div>
+        
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                        
+                        </div>
+                        <div class="media-content">
+                        
+                        </div>
+                    </div>
+        
+                    <div class="content">
+                        <b>Item</b>: Papaya
+                        <br />
+                        <b>Price</b>: $2.99
+                        <br />
+                        <b>Expiry Date</b>: 2021-10-26
+                        <br /><br />
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Add</a>
+                                <a href="#" class="card-footer-item">Remove</a>
+                            </footer>
+                        </div>
+                        <br />
+                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card column is-one-quarter">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src={lemon} alt="Lemon" />
+                    </figure>
+                </div>
+        
+                <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        
+                        </div>
+                        <div class="media-content">
+                        
+                        </div>
+                      </div>
+        
+                    <div class="content">
+                        <b>Item</b>: Lemon
+                        <br />
+                        <b>Price</b>: $1.99
+                        <br />
+                        <b>Expiry Date</b>: 2021-10-26
+                        <br /><br />
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Add</a>
+                                <a href="#" class="card-footer-item">Remove</a>
+                            </footer>
+                        </div>
+                        <br />
+                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <div class="columns">
+                <div class="card column is-one-quarter">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src={orange} alt="Orange" />
+                    </figure>
+                  </div>
+        
+                  <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        
+                        </div>
+                        <div class="media-content">
+                        
+                        </div>
+                      </div>
+        
+                      <div class="content">
+                        <b>Item</b>: Orange
+                        <br />
+                        <b>Price</b>: $0.99
+                        <br />
+                        <b>Expiry Date</b>: 2021-10-26
+                        <br /><br />
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Add</a>
+                                <a href="#" class="card-footer-item">Remove</a>
+                            </footer>
+                        </div>
+                        <br />
+                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
+        
+              <div class="card column is-one-quarter">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src={avocado} alt="Avocado" />
+                    </figure>
+                  </div>
+        
+                  <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        
+                        </div>
+                        <div class="media-content">
+                        
+                        </div>
+                      </div>
+        
+                      <div class="content">
+                        <b>Item</b>: Avocado
+                        <br />
+                        <b>Price</b>: $2.99
+                        <br />
+                        <b>Expiry Date</b>: 2021-10-26
+                        <br /><br />
+                        <div class="card">
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Add</a>
+                                <a href="#" class="card-footer-item">Remove</a>
+                            </footer>
+                        </div>
+                        <br />
+                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      {data && (
+        <div className="product-list">
           {data.products.map((item) => (
             <div className="product-card flex" key={item._id}>
               <img src={`/images/${item.image}`} className="margin-top-0" alt={"picture of " + item.name}/>
