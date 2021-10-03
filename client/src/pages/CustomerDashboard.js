@@ -11,7 +11,7 @@ import store from "../assets/images/store/artem-gavrysh-F6-U5fGAOik-unsplash.jpg
 const CustomerDashboard = () => {
   return (
   <main>
-      <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">        
                 <div class="navbar-item has-dropdown is-hoverable">

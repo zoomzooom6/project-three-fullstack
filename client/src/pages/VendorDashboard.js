@@ -13,7 +13,7 @@ import customer2 from "../assets/images/customers/iam_os-FrU6VeUe0YM-unsplash.jp
 const VendorDashboard = () => {
   return (
     <main>
-      <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">        
                 <div class="navbar-item has-dropdown is-hoverable">
