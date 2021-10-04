@@ -3,8 +3,30 @@ const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
   "./index.html",
-  "./templates/css/style.css",
-  "./templates/js/script.js"
+  "./src/components/Cart/index.js",
+  "./src/components/Checkout/index.js",
+  "./src/components/Footer/index.js",
+  "./src/components/Header/index.js",
+  "./src/components/ProductCard/index.js",
+  "./src/pages/CustomerDashboard.js",
+  "./src/pages/Home.js",
+  "./src/pages/Login.js",
+  "./src/pages/NoMatch.js",
+  "./src/pages/Signup.js",
+  "./src/pages/Success.js",
+  "./src/pages/VendorDashboard.js",
+  "./src/utils/actions.js",
+  "./src/utils/auth.js",
+  "./src/utils/mutations.js",
+  "./src/utils/queries.js",
+  "./src/utils/reducers.js",
+  "./src/App.css",
+  "./src/App.js",
+  "./src/App.test.js",
+  "./src/index.css",
+  "./src/index.js",
+  "./src/reportWebVitals.js",
+  "./src/setupTests.js"
 ];
 
 // Respond with cached resources

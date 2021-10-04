@@ -263,6 +263,7 @@ function Home() {
               </div>
           </div>
       </div>
+      <br />
       {data && (
         <div className="product-list">
           {data.products.map((item) => (
