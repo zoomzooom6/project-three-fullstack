@@ -660,6 +660,8 @@ const VendorDashboard = () => {
             </div>
         </div>
     </form>
+
+    <script src="%PUBLIC_URL%/templates/js/script.js"></script>
   </main>
   );
 };
