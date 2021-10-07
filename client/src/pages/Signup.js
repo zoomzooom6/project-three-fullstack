@@ -118,6 +118,26 @@ const Signup = () => {
             {error && <div>Signup failed</div>}
           </div>
         </div>
+        <div className="card">
+          <header className="card-header">
+            <p class="card-header-title is-centered">
+              Temporary redirects
+            </p>
+          </header>
+          <div className="card-content">
+            <p>Please select one of the buttons to go to the Vendor or Customer dashboards</p>
+          </div>
+          <div className="card-content">
+            <button className="button is-success">
+              <a href="/vendordashboard">Vendor</a>
+            </button>
+          </div>
+          <div className="card-content">
+            <button className="button is-success">
+              <a href="/customerdashboard">Customer</a>
+            </button>
+          </div>
+        </div>
       </div>
     </main>
   );
