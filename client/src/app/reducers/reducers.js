@@ -6,7 +6,7 @@ import {
   ADD_MULTIPLE_TO_CART,
   REMOVE_FROM_CART,
   CLEAR_CART
-} from "./actions";
+} from "../actions/types";
 
 const initialState = {
   cart: [],
@@ -14,9 +14,11 @@ const initialState = {
   categories: []
 }
 
-export const reducer = (state = initialState, action) => {
+export const reducers = (state = initialState, action) => {
+  console.log("initial state: \n" + state);
   switch (action.type) {
     case ADD_TO_CART:
+      console.log(action);
       return {
         ...state,
         cart: [...state.cart, action.product],
@@ -70,3 +72,5 @@ export const reducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export default reducers;

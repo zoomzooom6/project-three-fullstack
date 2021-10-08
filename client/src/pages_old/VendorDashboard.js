@@ -1,5 +1,5 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+//import {Helmet} from "react-helmet";
 import strawberry from "../assets/images/foods/allec-gomes-xnRg3xDcNnE-unsplash.jpg";
 import banana from "../assets/images/foods/charles-deluvio-0v_1TPz1uXw-unsplash.jpg";
 import papaya from "../assets/images/foods/charles-deluvio-yPI38imbQSI-unsplash.jpg";

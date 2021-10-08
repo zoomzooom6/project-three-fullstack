@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@stripe/stripe-js": "^1.18.0",
     "@apollo/client": "^3.4.12",
